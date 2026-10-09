@@ -1,0 +1,2007 @@
+- generic [active] [ref=f2e1]:
+  - status "Carregando o catálogo" [ref=f2e2]:
+    - generic [ref=f2e5]:
+      - strong [ref=f2e7]: Distribuidora ÁGUIA
+      - generic [ref=f2e10]: Carregando o catálogo…
+  - banner [ref=f2e11]:
+    - generic [ref=f2e12]:
+      - link "Ir para o início" [ref=f2e13] [cursor=pointer]:
+        - /url: "#inicio"
+        - generic [ref=f2e16]:
+          - generic [ref=f2e17]: Distribuidora
+          - strong [ref=f2e18]: ÁGUIA
+      - navigation "Menu principal" [ref=f2e19]:
+        - list [ref=f2e20]:
+          - listitem [ref=f2e21]:
+            - link "Início" [ref=f2e22] [cursor=pointer]:
+              - /url: "#inicio"
+          - listitem [ref=f2e23]:
+            - link "Produtos" [ref=f2e24] [cursor=pointer]:
+              - /url: "#produtos"
+          - listitem [ref=f2e25]:
+            - link "Sobre nós" [ref=f2e26] [cursor=pointer]:
+              - /url: "#sobre"
+          - listitem [ref=f2e27]:
+            - link "Contato" [ref=f2e28] [cursor=pointer]:
+              - /url: "#contato"
+      - button "Abrir carrinho de pedidos" [ref=f2e30] [cursor=pointer]:
+        - generic [ref=f2e35]: "0"
+  - main [ref=f2e36]:
+    - generic [ref=f2e39]:
+      - heading "Tradição e variedade em cada pedido." [level=1] [ref=f2e40]
+      - paragraph [ref=f2e41]: Paçocas, doces, pipocas e muito mais. Confira nosso catálogo e monte seu pedido de forma rápida e prática.
+      - generic [ref=f2e42]:
+        - link "Ver produtos" [ref=f2e43] [cursor=pointer]:
+          - /url: "#produtos"
+        - link "Fazer pedido" [ref=f2e46] [cursor=pointer]:
+          - /url: "#produtos"
+      - list [ref=f2e47]:
+        - listitem [ref=f2e48]:
+          - generic [ref=f2e53]:
+            - text: "Horário:"
+            - strong [ref=f2e54]: SEG A SEX • 7H ÀS 18H
+        - listitem [ref=f2e55]:
+          - generic [ref=f2e60]:
+            - strong [ref=f2e61]: Picos
+            - text: —
+            - strong [ref=f2e62]: PI
+        - listitem [ref=f2e63]:
+          - generic [ref=f2e67]:
+            - text: Pedidos direto no
+            - strong [ref=f2e68]: WhatsApp
+    - generic [ref=f2e70]:
+      - heading "Por que comprar com a Águia?" [level=2] [ref=f2e71]
+      - generic [ref=f2e72]:
+        - article [ref=f2e73]:
+          - heading "Qualidade" [level=3] [ref=f2e77]
+          - paragraph [ref=f2e78]: Produtos selecionados de fornecedores confiáveis, sempre fresquinhos.
+        - article [ref=f2e79]:
+          - heading "Variedade" [level=3] [ref=f2e84]
+          - paragraph [ref=f2e85]: Doces, paçocas, pipocas e salgadinhos para revenda e para sua festa.
+        - article [ref=f2e86]:
+          - heading "Atendimento" [level=3] [ref=f2e90]
+          - paragraph [ref=f2e91]: Fale diretamente com nossa equipe e combine preços pelo WhatsApp.
+        - article [ref=f2e92]:
+          - heading "Praticidade" [level=3] [ref=f2e96]
+          - paragraph [ref=f2e97]: Monte seu pedido em poucos cliques, sem cadastro e sem burocracia.
+    - generic [ref=f2e99]:
+      - generic [ref=f2e100]:
+        - heading "Nossos produtos" [level=2] [ref=f2e101]
+        - paragraph [ref=f2e102]: Escolha seus favoritos, adicione ao pedido e envie para gente no WhatsApp.
+      - generic [ref=f2e103]:
+        - generic [ref=f2e104]:
+          - generic [ref=f2e105]: Buscar produto
+          - searchbox "Buscar produto" [ref=f2e106]
+        - group "Filtrar por categoria" [ref=f2e107]:
+          - button "Todos" [pressed] [ref=f2e108] [cursor=pointer]
+          - button "Doces Amor de Minas" [ref=f2e109] [cursor=pointer]
+          - button "Bombons e Chocolates" [ref=f2e110] [cursor=pointer]
+          - button "Doces em Pote" [ref=f2e111] [cursor=pointer]
+          - button "Amendoim Japonês" [ref=f2e112] [cursor=pointer]
+          - button "Amendoins" [ref=f2e113] [cursor=pointer]
+          - button "Paçocas e Cocadas" [ref=f2e114] [cursor=pointer]
+          - button "Balas e Pirulitos" [ref=f2e115] [cursor=pointer]
+          - button "Barras de Cereal" [ref=f2e116] [cursor=pointer]
+          - button "Bananas e Frutas" [ref=f2e117] [cursor=pointer]
+          - button "Méis e Derivados" [ref=f2e118] [cursor=pointer]
+          - button "Doce de Leite" [ref=f2e119] [cursor=pointer]
+          - button "Doce Lili" [ref=f2e120] [cursor=pointer]
+          - button "Bebidas" [ref=f2e121] [cursor=pointer]
+          - button "Temperos e Sal" [ref=f2e122] [cursor=pointer]
+          - button "Pimentas Gourmet" [ref=f2e123] [cursor=pointer]
+          - button "Molhos" [ref=f2e124] [cursor=pointer]
+          - button "Lar e Odorizantes" [ref=f2e125] [cursor=pointer]
+          - button "Limpeza e Higiene" [ref=f2e126] [cursor=pointer]
+          - button "Pets" [ref=f2e127] [cursor=pointer]
+          - button "Controle de Pragas" [ref=f2e128] [cursor=pointer]
+      - status [ref=f2e129]:
+        - strong [ref=f2e130]: "179"
+        - text: produtos no catálogo
+      - generic [ref=f2e131]:
+        - article [ref=f2e132] [cursor=pointer]:
+          - generic [ref=f2e133]:
+            - img "Doce Amor de Minas, Sachê 30g" [ref=f2e134]
+            - generic [ref=f2e135]: Doces Amor de Minas
+          - generic [ref=f2e136]:
+            - heading "Doce Amor de Minas, Sachê 30g" [level=3] [ref=f2e137]
+            - paragraph [ref=f2e138]: Pct com 1,5kg, aprox. 50 Unid cx/10 pacotes
+            - generic [ref=f2e139]:
+              - generic [ref=f2e140]: R$ 60,49
+              - button "Adicionar" [ref=f2e141]
+        - article [ref=f2e144] [cursor=pointer]:
+          - generic [ref=f2e145]:
+            - img "Doce Amor de Minas Tablete Tradicional" [ref=f2e146]
+            - generic [ref=f2e147]: Doces Amor de Minas
+          - generic [ref=f2e148]:
+            - heading "Doce Amor de Minas Tablete Tradicional" [level=3] [ref=f2e149]
+            - paragraph [ref=f2e150]: Pote c/20 de 47g cx c/12 Potes
+            - generic [ref=f2e151]:
+              - generic [ref=f2e152]: R$ 56,90
+              - button "Adicionar" [ref=f2e153]
+        - article [ref=f2e156] [cursor=pointer]:
+          - generic [ref=f2e157]:
+            - img "Doce Amor de Minas Tablete c/coco" [ref=f2e158]
+            - generic [ref=f2e159]: Doces Amor de Minas
+          - generic [ref=f2e160]:
+            - heading "Doce Amor de Minas Tablete c/coco" [level=3] [ref=f2e161]
+            - paragraph [ref=f2e162]: Pote c/20 de 47g cx c/12 Potes
+            - generic [ref=f2e163]:
+              - generic [ref=f2e164]: R$ 56,90
+              - button "Adicionar" [ref=f2e165]
+        - article [ref=f2e168] [cursor=pointer]:
+          - generic [ref=f2e169]:
+            - img "Doce de Leite Pastoso, para confeitaria" [ref=f2e170]
+            - generic [ref=f2e171]: Doces Amor de Minas
+          - generic [ref=f2e172]:
+            - heading "Doce de Leite Pastoso, para confeitaria" [level=3] [ref=f2e173]
+            - paragraph [ref=f2e174]: Bisnaga 1kg
+            - generic [ref=f2e175]:
+              - generic [ref=f2e176]: R$ 42,00
+              - button "Adicionar" [ref=f2e177]
+        - article [ref=f2e180] [cursor=pointer]:
+          - generic [ref=f2e181]:
+            - img "Moedas sabor Chocolate" [ref=f2e182]
+            - generic [ref=f2e183]: Bombons e Chocolates
+          - generic [ref=f2e184]:
+            - heading "Moedas sabor Chocolate" [level=3] [ref=f2e185]
+            - paragraph [ref=f2e186]: 130 Unidades
+            - generic [ref=f2e187]:
+              - generic [ref=f2e188]: R$ 52,75
+              - button "Adicionar" [ref=f2e189]
+        - article [ref=f2e192] [cursor=pointer]:
+          - generic [ref=f2e193]:
+            - img "Caixa de Bombons Sortidos" [ref=f2e194]
+            - generic [ref=f2e195]: Bombons e Chocolates
+          - generic [ref=f2e196]:
+            - heading "Caixa de Bombons Sortidos" [level=3] [ref=f2e197]
+            - paragraph [ref=f2e198]: 180g (20 Unid x 9g cada)
+            - generic [ref=f2e199]:
+              - generic [ref=f2e200]: R$ 9,49
+              - button "Adicionar" [ref=f2e201]
+        - article [ref=f2e204] [cursor=pointer]:
+          - generic [ref=f2e205]:
+            - img "Moranguete Pote" [ref=f2e206]
+            - generic [ref=f2e207]: Bombons e Chocolates
+          - generic [ref=f2e208]:
+            - heading "Moranguete Pote" [level=3] [ref=f2e209]
+            - paragraph [ref=f2e210]: c/50 Unid x 9g cada
+            - generic [ref=f2e211]:
+              - generic [ref=f2e212]: R$ 24,50
+              - button "Adicionar" [ref=f2e213]
+        - article [ref=f2e216] [cursor=pointer]:
+          - generic [ref=f2e217]:
+            - img "Moranguete Caixa" [ref=f2e218]
+            - generic [ref=f2e219]: Bombons e Chocolates
+          - generic [ref=f2e220]:
+            - heading "Moranguete Caixa" [level=3] [ref=f2e221]
+            - paragraph [ref=f2e222]: c/100 Unid x 9g cada
+            - generic [ref=f2e223]:
+              - generic [ref=f2e224]: A combinar
+              - button "Adicionar" [ref=f2e225]
+        - article [ref=f2e228] [cursor=pointer]:
+          - generic [ref=f2e229]:
+            - img "Tablete Golden Ao Leite" [ref=f2e230]
+            - generic [ref=f2e231]: Bombons e Chocolates
+          - generic [ref=f2e232]:
+            - heading "Tablete Golden Ao Leite" [level=3] [ref=f2e233]
+            - paragraph [ref=f2e234]: 460g (20un x 23g)
+            - generic [ref=f2e235]:
+              - generic [ref=f2e236]: R$ 28,00
+              - button "Adicionar" [ref=f2e237]
+        - article [ref=f2e240] [cursor=pointer]:
+          - generic [ref=f2e241]:
+            - img "Tablete Golden Ao Leite" [ref=f2e242]
+            - generic [ref=f2e243]: Bombons e Chocolates
+          - generic [ref=f2e244]:
+            - heading "Tablete Golden Ao Leite" [level=3] [ref=f2e245]
+            - paragraph [ref=f2e246]: 900g (10un x 90g)
+            - generic [ref=f2e247]:
+              - generic [ref=f2e248]: R$ 54,00
+              - button "Adicionar" [ref=f2e249]
+        - article [ref=f2e252] [cursor=pointer]:
+          - generic [ref=f2e253]:
+            - img "Doce Beijo C/ Chocolate" [ref=f2e254]
+            - generic [ref=f2e255]: Doces em Pote
+          - generic [ref=f2e256]:
+            - heading "Doce Beijo C/ Chocolate" [level=3] [ref=f2e257]
+            - paragraph [ref=f2e258]: Pote c/21und
+            - generic [ref=f2e259]:
+              - generic [ref=f2e260]: R$ 58,00
+              - button "Adicionar" [ref=f2e261]
+        - article [ref=f2e264] [cursor=pointer]:
+          - generic [ref=f2e265]:
+            - img "Doce Palha Italiana" [ref=f2e266]
+            - generic [ref=f2e267]: Doces em Pote
+          - generic [ref=f2e268]:
+            - heading "Doce Palha Italiana" [level=3] [ref=f2e269]
+            - paragraph [ref=f2e270]: Pote c/21und
+            - generic [ref=f2e271]:
+              - generic [ref=f2e272]: R$ 58,00
+              - button "Adicionar" [ref=f2e273]
+        - article [ref=f2e276] [cursor=pointer]:
+          - generic [ref=f2e277]:
+            - img "Doce de Brigadeiro" [ref=f2e278]
+            - generic [ref=f2e279]: Doces em Pote
+          - generic [ref=f2e280]:
+            - heading "Doce de Brigadeiro" [level=3] [ref=f2e281]
+            - paragraph [ref=f2e282]: Pote c/21und
+            - generic [ref=f2e283]:
+              - generic [ref=f2e284]: R$ 58,00
+              - button "Adicionar" [ref=f2e285]
+        - article [ref=f2e288] [cursor=pointer]:
+          - generic [ref=f2e289]:
+            - img "Doce Pé de Moça" [ref=f2e290]
+            - generic [ref=f2e291]: Doces em Pote
+          - generic [ref=f2e292]:
+            - heading "Doce Pé de Moça" [level=3] [ref=f2e293]
+            - paragraph [ref=f2e294]: Pote c/21und
+            - generic [ref=f2e295]:
+              - generic [ref=f2e296]: R$ 58,00
+              - button "Adicionar" [ref=f2e297]
+        - article [ref=f2e300] [cursor=pointer]:
+          - generic [ref=f2e301]:
+            - img "Doce de Leite Pingo Bel" [ref=f2e302]
+            - generic [ref=f2e303]: Doces em Pote
+          - generic [ref=f2e304]:
+            - heading "Doce de Leite Pingo Bel" [level=3] [ref=f2e305]
+            - paragraph [ref=f2e306]: Pote c/21und
+            - generic [ref=f2e307]:
+              - generic [ref=f2e308]: R$ 58,00
+              - button "Adicionar" [ref=f2e309]
+        - article [ref=f2e312] [cursor=pointer]:
+          - generic [ref=f2e313]:
+            - img "Amend. Jap. Bacon 24g" [ref=f2e314]
+            - generic [ref=f2e315]: Amendoim Japonês
+          - generic [ref=f2e316]:
+            - heading "Amend. Jap. Bacon 24g" [level=3] [ref=f2e317]
+            - paragraph [ref=f2e318]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e319]:
+              - generic [ref=f2e320]: R$ 5,50
+              - button "Adicionar" [ref=f2e321]
+        - article [ref=f2e324] [cursor=pointer]:
+          - generic [ref=f2e325]:
+            - img "Amend. Jap. Trad. 24g" [ref=f2e326]
+            - generic [ref=f2e327]: Amendoim Japonês
+          - generic [ref=f2e328]:
+            - heading "Amend. Jap. Trad. 24g" [level=3] [ref=f2e329]
+            - paragraph [ref=f2e330]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e331]:
+              - generic [ref=f2e332]: R$ 5,50
+              - button "Adicionar" [ref=f2e333]
+        - article [ref=f2e336] [cursor=pointer]:
+          - generic [ref=f2e337]:
+            - img "Amend. S/ Pele. 24g Und" [ref=f2e338]
+            - generic [ref=f2e339]: Amendoim Japonês
+          - generic [ref=f2e340]:
+            - heading "Amend. S/ Pele. 24g Und" [level=3] [ref=f2e341]
+            - paragraph [ref=f2e342]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e343]:
+              - generic [ref=f2e344]: R$ 3,00
+              - button "Adicionar" [ref=f2e345]
+        - article [ref=f2e348] [cursor=pointer]:
+          - generic [ref=f2e349]:
+            - img "Amend. Jap. Ceb. E Salsa. 24g" [ref=f2e350]
+            - generic [ref=f2e351]: Amendoim Japonês
+          - generic [ref=f2e352]:
+            - heading "Amend. Jap. Ceb. E Salsa. 24g" [level=3] [ref=f2e353]
+            - paragraph [ref=f2e354]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e355]:
+              - generic [ref=f2e356]: R$ 5,50
+              - button "Adicionar" [ref=f2e357]
+        - article [ref=f2e360] [cursor=pointer]:
+          - generic [ref=f2e361]:
+            - img "Amend. Jap. Pimenta Mex. 24g" [ref=f2e362]
+            - generic [ref=f2e363]: Amendoim Japonês
+          - generic [ref=f2e364]:
+            - heading "Amend. Jap. Pimenta Mex. 24g" [level=3] [ref=f2e365]
+            - paragraph [ref=f2e366]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e367]:
+              - generic [ref=f2e368]: R$ 5,50
+              - button "Adicionar" [ref=f2e369]
+        - article [ref=f2e372] [cursor=pointer]:
+          - generic [ref=f2e373]:
+            - img "Amend. Jap. Colorido. 24g" [ref=f2e374]
+            - generic [ref=f2e375]: Amendoim Japonês
+          - generic [ref=f2e376]:
+            - heading "Amend. Jap. Colorido. 24g" [level=3] [ref=f2e377]
+            - paragraph [ref=f2e378]: Cartela com 5 unid Cx com 14 tiras
+            - generic [ref=f2e379]:
+              - generic [ref=f2e380]: R$ 5,50
+              - button "Adicionar" [ref=f2e381]
+        - article [ref=f2e384] [cursor=pointer]:
+          - generic [ref=f2e385]:
+            - img "Amend. Jap. 60g Und" [ref=f2e386]
+            - generic [ref=f2e387]: Amendoins
+          - generic [ref=f2e388]:
+            - heading "Amend. Jap. 60g Und" [level=3] [ref=f2e389]
+            - paragraph [ref=f2e390]: cx/30 und
+            - generic [ref=f2e391]:
+              - generic [ref=f2e392]: R$ 2,85
+              - button "Adicionar" [ref=f2e393]
+        - article [ref=f2e396] [cursor=pointer]:
+          - generic [ref=f2e397]:
+            - img "Amend. S/Pele 60g" [ref=f2e398]
+            - generic [ref=f2e399]: Amendoins
+          - generic [ref=f2e400]:
+            - heading "Amend. S/Pele 60g" [level=3] [ref=f2e401]
+            - paragraph [ref=f2e402]: cx/30 und
+            - generic [ref=f2e403]:
+              - generic [ref=f2e404]: R$ 2,85
+              - button "Adicionar" [ref=f2e405]
+        - article [ref=f2e408] [cursor=pointer]:
+          - generic [ref=f2e409]:
+            - img "Pé de Moleque Pote 25 und" [ref=f2e410]
+            - generic [ref=f2e411]: Amendoins
+          - generic [ref=f2e412]:
+            - heading "Pé de Moleque Pote 25 und" [level=3] [ref=f2e413]
+            - paragraph [ref=f2e414]: cx/6 potes
+            - generic [ref=f2e415]:
+              - generic [ref=f2e416]: R$ 40,00
+              - button "Adicionar" [ref=f2e417]
+        - article [ref=f2e420] [cursor=pointer]:
+          - generic [ref=f2e421]:
+            - img "Caseirão Pote 25 und" [ref=f2e422]
+            - generic [ref=f2e423]: Amendoins
+          - generic [ref=f2e424]:
+            - heading "Caseirão Pote 25 und" [level=3] [ref=f2e425]
+            - paragraph [ref=f2e426]: cx/6 potes
+            - generic [ref=f2e427]:
+              - generic [ref=f2e428]: R$ 40,00
+              - button "Adicionar" [ref=f2e429]
+        - article [ref=f2e432] [cursor=pointer]:
+          - generic [ref=f2e433]:
+            - img "Molecão Pote 25 und" [ref=f2e434]
+            - generic [ref=f2e435]: Amendoins
+          - generic [ref=f2e436]:
+            - heading "Molecão Pote 25 und" [level=3] [ref=f2e437]
+            - paragraph [ref=f2e438]: cx/6 potes
+            - generic [ref=f2e439]:
+              - generic [ref=f2e440]: R$ 40,00
+              - button "Adicionar" [ref=f2e441]
+        - article [ref=f2e444] [cursor=pointer]:
+          - generic [ref=f2e445]:
+            - img "Paçoca Rolha Cx. C/ 100" [ref=f2e446]
+            - generic [ref=f2e447]: Paçocas e Cocadas
+          - generic [ref=f2e448]:
+            - heading "Paçoca Rolha Cx. C/ 100" [level=3] [ref=f2e449]
+            - paragraph [ref=f2e450]
+            - generic [ref=f2e451]:
+              - generic [ref=f2e452]: R$ 39,00
+              - button "Adicionar" [ref=f2e453]
+        - article [ref=f2e456] [cursor=pointer]:
+          - generic [ref=f2e457]:
+            - img "Paçoca Rolha Pote C/ 50" [ref=f2e458]
+            - generic [ref=f2e459]: Paçocas e Cocadas
+          - generic [ref=f2e460]:
+            - heading "Paçoca Rolha Pote C/ 50" [level=3] [ref=f2e461]
+            - paragraph [ref=f2e462]: cx com 6
+            - generic [ref=f2e463]:
+              - generic [ref=f2e464]: R$ 22,50
+              - button "Adicionar" [ref=f2e465]
+        - article [ref=f2e468] [cursor=pointer]:
+          - generic [ref=f2e469]:
+            - img "Paçoca No Espeto c/ 35 und" [ref=f2e470]
+            - generic [ref=f2e471]: Paçocas e Cocadas
+          - generic [ref=f2e472]:
+            - heading "Paçoca No Espeto c/ 35 und" [level=3] [ref=f2e473]
+            - paragraph [ref=f2e474]: cx c/ 2
+            - generic [ref=f2e475]:
+              - generic [ref=f2e476]: R$ 75,00
+              - button "Adicionar" [ref=f2e477]
+        - article [ref=f2e480] [cursor=pointer]:
+          - generic [ref=f2e481]:
+            - img "Cocada Recheada Cremosa" [ref=f2e482]
+            - generic [ref=f2e483]: Paçocas e Cocadas
+          - generic [ref=f2e484]:
+            - heading "Cocada Recheada Cremosa" [level=3] [ref=f2e485]
+            - paragraph [ref=f2e486]: Display c/ 15 und. 42g cada
+            - generic [ref=f2e487]:
+              - generic [ref=f2e488]: R$ 27,00
+              - button "Adicionar" [ref=f2e489]
+        - article [ref=f2e492] [cursor=pointer]:
+          - generic [ref=f2e493]:
+            - img "Bala Café 500g" [ref=f2e494]
+            - generic [ref=f2e495]: Balas e Pirulitos
+          - generic [ref=f2e496]:
+            - heading "Bala Café 500g" [level=3] [ref=f2e497]
+            - paragraph [ref=f2e498]: Pacote. C/ 100 unid
+            - generic [ref=f2e499]:
+              - generic [ref=f2e500]: R$ 16,00
+              - button "Adicionar" [ref=f2e501]
+        - article [ref=f2e504] [cursor=pointer]:
+          - generic [ref=f2e505]:
+            - img "Bala Mel 500g" [ref=f2e506]
+            - generic [ref=f2e507]: Balas e Pirulitos
+          - generic [ref=f2e508]:
+            - heading "Bala Mel 500g" [level=3] [ref=f2e509]
+            - paragraph [ref=f2e510]: Pacote. C/ 100 unid
+            - generic [ref=f2e511]:
+              - generic [ref=f2e512]: R$ 16,00
+              - button "Adicionar" [ref=f2e513]
+        - article [ref=f2e516] [cursor=pointer]:
+          - generic [ref=f2e517]:
+            - img "Bala Pipper Hortelão" [ref=f2e518]
+            - generic [ref=f2e519]: Balas e Pirulitos
+          - generic [ref=f2e520]:
+            - heading "Bala Pipper Hortelão" [level=3] [ref=f2e521]
+            - paragraph [ref=f2e522]: 500g Pacote. C/ 100 unid
+            - generic [ref=f2e523]:
+              - generic [ref=f2e524]: R$ 14,80
+              - button "Adicionar" [ref=f2e525]
+        - article [ref=f2e528] [cursor=pointer]:
+          - generic [ref=f2e529]:
+            - img "Bala Sambol" [ref=f2e530]
+            - generic [ref=f2e531]: Balas e Pirulitos
+          - generic [ref=f2e532]:
+            - heading "Bala Sambol" [level=3] [ref=f2e533]
+            - paragraph [ref=f2e534]: 500g Pacote. C/ 100 unid
+            - generic [ref=f2e535]:
+              - generic [ref=f2e536]: R$ 16,00
+              - button "Adicionar" [ref=f2e537]
+        - article [ref=f2e540] [cursor=pointer]:
+          - generic [ref=f2e541]:
+            - img "Pirulito Drop Pop" [ref=f2e542]
+            - generic [ref=f2e543]: Balas e Pirulitos
+          - generic [ref=f2e544]:
+            - heading "Pirulito Drop Pop" [level=3] [ref=f2e545]
+            - paragraph [ref=f2e546]: pct c/50 unid
+            - generic [ref=f2e547]:
+              - generic [ref=f2e548]: R$ 9,00
+              - button "Adicionar" [ref=f2e549]
+        - article [ref=f2e552] [cursor=pointer]:
+          - generic [ref=f2e553]:
+            - img "Pirulito Samito" [ref=f2e554]
+            - generic [ref=f2e555]: Balas e Pirulitos
+          - generic [ref=f2e556]:
+            - heading "Pirulito Samito" [level=3] [ref=f2e557]
+            - paragraph [ref=f2e558]: pct c/50 unid
+            - generic [ref=f2e559]:
+              - generic [ref=f2e560]: R$ 9,00
+              - button "Adicionar" [ref=f2e561]
+        - article [ref=f2e564] [cursor=pointer]:
+          - generic [ref=f2e565]:
+            - img "Pirulito Lampião" [ref=f2e566]
+            - generic [ref=f2e567]: Balas e Pirulitos
+          - generic [ref=f2e568]:
+            - heading "Pirulito Lampião" [level=3] [ref=f2e569]
+            - paragraph [ref=f2e570]: pct c/50 unid
+            - generic [ref=f2e571]:
+              - generic [ref=f2e572]: A combinar
+              - button "Adicionar" [ref=f2e573]
+        - article [ref=f2e576] [cursor=pointer]:
+          - generic [ref=f2e577]:
+            - img "Lampião Maracujá" [ref=f2e578]
+            - generic [ref=f2e579]: Balas e Pirulitos
+          - generic [ref=f2e580]:
+            - heading "Lampião Maracujá" [level=3] [ref=f2e581]
+            - paragraph [ref=f2e582]: pct c/50 unid
+            - generic [ref=f2e583]:
+              - generic [ref=f2e584]: R$ 20,50
+              - button "Adicionar" [ref=f2e585]
+        - article [ref=f2e588] [cursor=pointer]:
+          - generic [ref=f2e589]:
+            - img "Pop Mix" [ref=f2e590]
+            - generic [ref=f2e591]: Balas e Pirulitos
+          - generic [ref=f2e592]:
+            - heading "Pop Mix" [level=3] [ref=f2e593]
+            - paragraph [ref=f2e594]: Pct c/50
+            - generic [ref=f2e595]:
+              - generic [ref=f2e596]: R$ 20,50
+              - button "Adicionar" [ref=f2e597]
+        - article [ref=f2e600] [cursor=pointer]:
+          - generic [ref=f2e601]:
+            - img "Pop Morango" [ref=f2e602]
+            - generic [ref=f2e603]: Balas e Pirulitos
+          - generic [ref=f2e604]:
+            - heading "Pop Morango" [level=3] [ref=f2e605]
+            - paragraph [ref=f2e606]: Pct c/50
+            - generic [ref=f2e607]:
+              - generic [ref=f2e608]: R$ 20,50
+              - button "Adicionar" [ref=f2e609]
+        - article [ref=f2e612] [cursor=pointer]:
+          - generic [ref=f2e613]:
+            - img "Pop Black" [ref=f2e614]
+            - generic [ref=f2e615]: Balas e Pirulitos
+          - generic [ref=f2e616]:
+            - heading "Pop Black" [level=3] [ref=f2e617]
+            - paragraph [ref=f2e618]: Pct c/50
+            - generic [ref=f2e619]:
+              - generic [ref=f2e620]: R$ 20,50
+              - button "Adicionar" [ref=f2e621]
+        - article [ref=f2e624] [cursor=pointer]:
+          - generic [ref=f2e625]:
+            - img "Pop Cereja" [ref=f2e626]
+            - generic [ref=f2e627]: Balas e Pirulitos
+          - generic [ref=f2e628]:
+            - heading "Pop Cereja" [level=3] [ref=f2e629]
+            - paragraph [ref=f2e630]: Pct c/50
+            - generic [ref=f2e631]:
+              - generic [ref=f2e632]: R$ 20,50
+              - button "Adicionar" [ref=f2e633]
+        - article [ref=f2e636] [cursor=pointer]:
+          - generic [ref=f2e637]:
+            - img "Pop Tutti" [ref=f2e638]
+            - generic [ref=f2e639]: Balas e Pirulitos
+          - generic [ref=f2e640]:
+            - heading "Pop Tutti" [level=3] [ref=f2e641]
+            - paragraph [ref=f2e642]: Pct c/50
+            - generic [ref=f2e643]:
+              - generic [ref=f2e644]: R$ 20,50
+              - button "Adicionar" [ref=f2e645]
+        - article [ref=f2e648] [cursor=pointer]:
+          - generic [ref=f2e649]:
+            - img "Pop Energy" [ref=f2e650]
+            - generic [ref=f2e651]: Balas e Pirulitos
+          - generic [ref=f2e652]:
+            - heading "Pop Energy" [level=3] [ref=f2e653]
+            - paragraph [ref=f2e654]: Pct c/50
+            - generic [ref=f2e655]:
+              - generic [ref=f2e656]: R$ 20,50
+              - button "Adicionar" [ref=f2e657]
+        - article [ref=f2e660] [cursor=pointer]:
+          - generic [ref=f2e661]:
+            - img "Barra de Cereal Trio Avelã Castanha e" [ref=f2e662]
+            - generic [ref=f2e663]: Barras de Cereal
+          - generic [ref=f2e664]:
+            - heading "Barra de Cereal Trio Avelã Castanha e" [level=3] [ref=f2e665]
+            - paragraph [ref=f2e666]: Chocolate Display c/12 unid
+            - generic [ref=f2e667]:
+              - generic [ref=f2e668]: R$ 28,00
+              - button "Adicionar" [ref=f2e669]
+        - article [ref=f2e672] [cursor=pointer]:
+          - generic [ref=f2e673]:
+            - img "Barra de Cereal Trio Banana Aveia e" [ref=f2e674]
+            - generic [ref=f2e675]: Barras de Cereal
+          - generic [ref=f2e676]:
+            - heading "Barra de Cereal Trio Banana Aveia e" [level=3] [ref=f2e677]
+            - paragraph [ref=f2e678]: Mel Display c/12 unid
+            - generic [ref=f2e679]:
+              - generic [ref=f2e680]: R$ 28,00
+              - button "Adicionar" [ref=f2e681]
+        - article [ref=f2e684] [cursor=pointer]:
+          - generic [ref=f2e685]:
+            - img "Barra de Cereal Trio Brigadeiro" [ref=f2e686]
+            - generic [ref=f2e687]: Barras de Cereal
+          - generic [ref=f2e688]:
+            - heading "Barra de Cereal Trio Brigadeiro" [level=3] [ref=f2e689]
+            - paragraph [ref=f2e690]: Display c/12 unid
+            - generic [ref=f2e691]:
+              - generic [ref=f2e692]: R$ 28,00
+              - button "Adicionar" [ref=f2e693]
+        - article [ref=f2e696] [cursor=pointer]:
+          - generic [ref=f2e697]:
+            - img "Barra de Cereal Trio Zero Banana e" [ref=f2e698]
+            - generic [ref=f2e699]: Barras de Cereal
+          - generic [ref=f2e700]:
+            - heading "Barra de Cereal Trio Zero Banana e" [level=3] [ref=f2e701]
+            - paragraph [ref=f2e702]: Mel Display c/12 unid
+            - generic [ref=f2e703]:
+              - generic [ref=f2e704]: R$ 32,00
+              - button "Adicionar" [ref=f2e705]
+        - article [ref=f2e708] [cursor=pointer]:
+          - generic [ref=f2e709]:
+            - img "Barra de Cereal Trio Morango c/ Chocolate" [ref=f2e710]
+            - generic [ref=f2e711]: Barras de Cereal
+          - generic [ref=f2e712]:
+            - heading "Barra de Cereal Trio Morango c/ Chocolate" [level=3] [ref=f2e713]
+            - paragraph [ref=f2e714]: Display c/12 unid
+            - generic [ref=f2e715]:
+              - generic [ref=f2e716]: R$ 28,00
+              - button "Adicionar" [ref=f2e717]
+        - article [ref=f2e720] [cursor=pointer]:
+          - generic [ref=f2e721]:
+            - img "Barra de Cereal Trio Coco com" [ref=f2e722]
+            - generic [ref=f2e723]: Barras de Cereal
+          - generic [ref=f2e724]:
+            - heading "Barra de Cereal Trio Coco com" [level=3] [ref=f2e725]
+            - paragraph [ref=f2e726]: Chocolate Display c/12 unid
+            - generic [ref=f2e727]:
+              - generic [ref=f2e728]: R$ 28,00
+              - button "Adicionar" [ref=f2e729]
+        - article [ref=f2e732] [cursor=pointer]:
+          - generic [ref=f2e733]:
+            - img "Barra de Cereal Zero açucar" [ref=f2e734]
+            - generic [ref=f2e735]: Barras de Cereal
+          - generic [ref=f2e736]:
+            - heading "Barra de Cereal Zero açucar" [level=3] [ref=f2e737]
+            - paragraph [ref=f2e738]: Display 12 und
+            - generic [ref=f2e739]:
+              - generic [ref=f2e740]: R$ 28,00
+              - button "Adicionar" [ref=f2e741]
+        - article [ref=f2e744] [cursor=pointer]:
+          - generic [ref=f2e745]:
+            - img "Barra de Cereal Amendoim" [ref=f2e746]
+            - generic [ref=f2e747]: Barras de Cereal
+          - generic [ref=f2e748]:
+            - heading "Barra de Cereal Amendoim" [level=3] [ref=f2e749]
+            - paragraph [ref=f2e750]: Display 12 und
+            - generic [ref=f2e751]:
+              - generic [ref=f2e752]: R$ 24,00
+              - button "Adicionar" [ref=f2e753]
+        - article [ref=f2e756] [cursor=pointer]:
+          - generic [ref=f2e757]:
+            - img "Barra de Cereal Banana e Mel" [ref=f2e758]
+            - generic [ref=f2e759]: Barras de Cereal
+          - generic [ref=f2e760]:
+            - heading "Barra de Cereal Banana e Mel" [level=3] [ref=f2e761]
+            - paragraph [ref=f2e762]: Display 12 und
+            - generic [ref=f2e763]:
+              - generic [ref=f2e764]: R$ 24,00
+              - button "Adicionar" [ref=f2e765]
+        - article [ref=f2e768] [cursor=pointer]:
+          - generic [ref=f2e769]:
+            - img "Barra de Cereal Bolo de Chocolate" [ref=f2e770]
+            - generic [ref=f2e771]: Barras de Cereal
+          - generic [ref=f2e772]:
+            - heading "Barra de Cereal Bolo de Chocolate" [level=3] [ref=f2e773]
+            - paragraph [ref=f2e774]: Display c/ 12 unid
+            - generic [ref=f2e775]:
+              - generic [ref=f2e776]: R$ 24,00
+              - button "Adicionar" [ref=f2e777]
+        - article [ref=f2e780] [cursor=pointer]:
+          - generic [ref=f2e781]:
+            - img "Barra de Cereal Frutas" [ref=f2e782]
+            - generic [ref=f2e783]: Barras de Cereal
+          - generic [ref=f2e784]:
+            - heading "Barra de Cereal Frutas" [level=3] [ref=f2e785]
+            - paragraph [ref=f2e786]: Display c/12 unid
+            - generic [ref=f2e787]:
+              - generic [ref=f2e788]: R$ 24,00
+              - button "Adicionar" [ref=f2e789]
+        - article [ref=f2e792] [cursor=pointer]:
+          - generic [ref=f2e793]:
+            - img "Barra de Cereal Morango e Chocolate" [ref=f2e794]
+            - generic [ref=f2e795]: Barras de Cereal
+          - generic [ref=f2e796]:
+            - heading "Barra de Cereal Morango e Chocolate" [level=3] [ref=f2e797]
+            - paragraph [ref=f2e798]: Display c/12 unid
+            - generic [ref=f2e799]:
+              - generic [ref=f2e800]: R$ 24,00
+              - button "Adicionar" [ref=f2e801]
+        - article [ref=f2e804] [cursor=pointer]:
+          - generic [ref=f2e805]:
+            - img "Barra de Cereal Castanha com Chocolate" [ref=f2e806]
+            - generic [ref=f2e807]: Barras de Cereal
+          - generic [ref=f2e808]:
+            - heading "Barra de Cereal Castanha com Chocolate" [level=3] [ref=f2e809]
+            - paragraph [ref=f2e810]: Display c/12 unid
+            - generic [ref=f2e811]:
+              - generic [ref=f2e812]: R$ 24,00
+              - button "Adicionar" [ref=f2e813]
+        - article [ref=f2e816] [cursor=pointer]:
+          - generic [ref=f2e817]:
+            - img "Banana tradicional Zero Açucar" [ref=f2e818]
+            - generic [ref=f2e819]: Bananas e Frutas
+          - generic [ref=f2e820]:
+            - heading "Banana tradicional Zero Açucar" [level=3] [ref=f2e821]
+            - paragraph [ref=f2e822]: Display 24 und
+            - generic [ref=f2e823]:
+              - generic [ref=f2e824]: R$ 65,00
+              - button "Adicionar" [ref=f2e825]
+        - article [ref=f2e828] [cursor=pointer]:
+          - generic [ref=f2e829]:
+            - img "Banana com chocolate e Café" [ref=f2e830]
+            - generic [ref=f2e831]: Bananas e Frutas
+          - generic [ref=f2e832]:
+            - heading "Banana com chocolate e Café" [level=3] [ref=f2e833]
+            - paragraph [ref=f2e834]: Display 24 und
+            - generic [ref=f2e835]:
+              - generic [ref=f2e836]: R$ 65,00
+              - button "Adicionar" [ref=f2e837]
+        - article [ref=f2e840] [cursor=pointer]:
+          - generic [ref=f2e841]:
+            - img "Banana Com chocolate" [ref=f2e842]
+            - generic [ref=f2e843]: Bananas e Frutas
+          - generic [ref=f2e844]:
+            - heading "Banana Com chocolate" [level=3] [ref=f2e845]
+            - paragraph [ref=f2e846]: Display 24 und
+            - generic [ref=f2e847]:
+              - generic [ref=f2e848]: R$ 65,00
+              - button "Adicionar" [ref=f2e849]
+        - article [ref=f2e852] [cursor=pointer]:
+          - generic [ref=f2e853]:
+            - img "Banana com abacaxi" [ref=f2e854]
+            - generic [ref=f2e855]: Bananas e Frutas
+          - generic [ref=f2e856]:
+            - heading "Banana com abacaxi" [level=3] [ref=f2e857]
+            - paragraph [ref=f2e858]: Display 12 und
+            - generic [ref=f2e859]:
+              - generic [ref=f2e860]: R$ 38,00
+              - button "Adicionar" [ref=f2e861]
+        - article [ref=f2e864] [cursor=pointer]:
+          - generic [ref=f2e865]:
+            - img "Banana com chia e linhaça" [ref=f2e866]
+            - generic [ref=f2e867]: Bananas e Frutas
+          - generic [ref=f2e868]:
+            - heading "Banana com chia e linhaça" [level=3] [ref=f2e869]
+            - paragraph [ref=f2e870]: Display 24 und
+            - generic [ref=f2e871]:
+              - generic [ref=f2e872]: R$ 65,00
+              - button "Adicionar" [ref=f2e873]
+        - article [ref=f2e876] [cursor=pointer]:
+          - generic [ref=f2e877]:
+            - img "Bananikas tradicional, Goiabikas e" [ref=f2e878]
+            - generic [ref=f2e879]: Bananas e Frutas
+          - generic [ref=f2e880]:
+            - heading "Bananikas tradicional, Goiabikas e" [level=3] [ref=f2e881]
+            - paragraph [ref=f2e882]: Banana com chocolate Pacote C/50 Unid
+            - generic [ref=f2e883]:
+              - generic [ref=f2e884]: R$ 43,00
+              - button "Adicionar" [ref=f2e885]
+        - article [ref=f2e888] [cursor=pointer]:
+          - generic [ref=f2e889]:
+            - img "Paçoca Diet c/ Aveia 480g" [ref=f2e890]
+            - generic [ref=f2e891]: Méis e Derivados
+          - generic [ref=f2e892]:
+            - heading "Paçoca Diet c/ Aveia 480g" [level=3] [ref=f2e893]
+            - paragraph [ref=f2e894]
+            - generic [ref=f2e895]:
+              - generic [ref=f2e896]: R$ 46,00
+              - button "Adicionar" [ref=f2e897]
+        - article [ref=f2e900] [cursor=pointer]:
+          - generic [ref=f2e901]:
+            - img "Mel em Sache 1kg - 250 Unid" [ref=f2e902]
+            - generic [ref=f2e903]: Méis e Derivados
+          - generic [ref=f2e904]:
+            - heading "Mel em Sache 1kg - 250 Unid" [level=3] [ref=f2e905]
+            - paragraph [ref=f2e906]
+            - generic [ref=f2e907]:
+              - generic [ref=f2e908]: R$ 59,90
+              - button "Adicionar" [ref=f2e909]
+        - article [ref=f2e912] [cursor=pointer]:
+          - generic [ref=f2e913]:
+            - img "Mel Orgânico" [ref=f2e914]
+            - generic [ref=f2e915]: Méis e Derivados
+          - generic [ref=f2e916]:
+            - heading "Mel Orgânico" [level=3] [ref=f2e917]
+            - paragraph [ref=f2e918]: "Tamanhos: 200g ; 320g ; 500g"
+            - generic [ref=f2e919]:
+              - generic [ref=f2e920]: R$ 19,50
+              - button "Adicionar" [ref=f2e921]
+        - article [ref=f2e924] [cursor=pointer]:
+          - generic [ref=f2e925]:
+            - img "Extrato de Própolis Marron" [ref=f2e926]
+            - generic [ref=f2e927]: Méis e Derivados
+          - generic [ref=f2e928]:
+            - heading "Extrato de Própolis Marron" [level=3] [ref=f2e929]
+            - paragraph [ref=f2e930]
+            - generic [ref=f2e931]:
+              - generic [ref=f2e932]: R$ 11,00
+              - button "Adicionar" [ref=f2e933]
+        - article [ref=f2e936] [cursor=pointer]:
+          - generic [ref=f2e937]:
+            - img "Extrato de Própolis Verde" [ref=f2e938]
+            - generic [ref=f2e939]: Méis e Derivados
+          - generic [ref=f2e940]:
+            - heading "Extrato de Própolis Verde" [level=3] [ref=f2e941]
+            - paragraph [ref=f2e942]
+            - generic [ref=f2e943]:
+              - generic [ref=f2e944]: R$ 13,00
+              - button "Adicionar" [ref=f2e945]
+        - article [ref=f2e948] [cursor=pointer]:
+          - generic [ref=f2e949]:
+            - img "Mel 100% Natural e Orgânico" [ref=f2e950]
+            - generic [ref=f2e951]: Méis e Derivados
+          - generic [ref=f2e952]:
+            - heading "Mel 100% Natural e Orgânico" [level=3] [ref=f2e953]
+            - paragraph [ref=f2e954]: Bisnaga 270g
+            - generic [ref=f2e955]:
+              - generic [ref=f2e956]: R$ 18,90
+              - button "Adicionar" [ref=f2e957]
+        - article [ref=f2e960] [cursor=pointer]:
+          - generic [ref=f2e961]:
+            - img "Mel 100% Natural e Orgânico" [ref=f2e962]
+            - generic [ref=f2e963]: Méis e Derivados
+          - generic [ref=f2e964]:
+            - heading "Mel 100% Natural e Orgânico" [level=3] [ref=f2e965]
+            - paragraph [ref=f2e966]: Bisnaga 470g
+            - generic [ref=f2e967]:
+              - generic [ref=f2e968]: A combinar
+              - button "Adicionar" [ref=f2e969]
+        - article [ref=f2e972] [cursor=pointer]:
+          - generic [ref=f2e973]:
+            - img "Mel 100% Natural e Orgânico" [ref=f2e974]
+            - generic [ref=f2e975]: Méis e Derivados
+          - generic [ref=f2e976]:
+            - heading "Mel 100% Natural e Orgânico" [level=3] [ref=f2e977]
+            - paragraph [ref=f2e978]: Bisnaga de vidro 720g
+            - generic [ref=f2e979]:
+              - generic [ref=f2e980]: R$ 36,60
+              - button "Adicionar" [ref=f2e981]
+        - article [ref=f2e984] [cursor=pointer]:
+          - generic [ref=f2e985]:
+            - img "Mel 100% Natural e Orgânico" [ref=f2e986]
+            - generic [ref=f2e987]: Méis e Derivados
+          - generic [ref=f2e988]:
+            - heading "Mel 100% Natural e Orgânico" [level=3] [ref=f2e989]
+            - paragraph [ref=f2e990]: Sachê Pacote de 100g
+            - generic [ref=f2e991]:
+              - generic [ref=f2e992]: R$ 10,49
+              - button "Adicionar" [ref=f2e993]
+        - article [ref=f2e996] [cursor=pointer]:
+          - generic [ref=f2e997]:
+            - img "Mel 100% Natural e Orgânico" [ref=f2e998]
+            - generic [ref=f2e999]: Méis e Derivados
+          - generic [ref=f2e1000]:
+            - heading "Mel 100% Natural e Orgânico" [level=3] [ref=f2e1001]
+            - paragraph [ref=f2e1002]: Sachê Pacote de 200g
+            - generic [ref=f2e1003]:
+              - generic [ref=f2e1004]: A combinar
+              - button "Adicionar" [ref=f2e1005]
+        - article [ref=f2e1008] [cursor=pointer]:
+          - generic [ref=f2e1009]:
+            - img "Doce de Leite Tradicional Pote" [ref=f2e1010]
+            - generic [ref=f2e1011]: Doce de Leite
+          - generic [ref=f2e1012]:
+            - heading "Doce de Leite Tradicional Pote" [level=3] [ref=f2e1013]
+            - paragraph [ref=f2e1014]: Vidro 410g cx c/24
+            - generic [ref=f2e1015]:
+              - generic [ref=f2e1016]: R$ 26,20
+              - button "Adicionar" [ref=f2e1017]
+        - article [ref=f2e1020] [cursor=pointer]:
+          - generic [ref=f2e1021]:
+            - img "Doce de Leite c/coco Pote" [ref=f2e1022]
+            - generic [ref=f2e1023]: Doce de Leite
+          - generic [ref=f2e1024]:
+            - heading "Doce de Leite c/coco Pote" [level=3] [ref=f2e1025]
+            - paragraph [ref=f2e1026]: Vidro 400g cx c/24
+            - generic [ref=f2e1027]:
+              - generic [ref=f2e1028]: R$ 26,20
+              - button "Adicionar" [ref=f2e1029]
+        - article [ref=f2e1032] [cursor=pointer]:
+          - generic [ref=f2e1033]:
+            - img "Doce de Leite c/ameixa Pote" [ref=f2e1034]
+            - generic [ref=f2e1035]: Doce de Leite
+          - generic [ref=f2e1036]:
+            - heading "Doce de Leite c/ameixa Pote" [level=3] [ref=f2e1037]
+            - paragraph [ref=f2e1038]: Vidro 410g cx c/24
+            - generic [ref=f2e1039]:
+              - generic [ref=f2e1040]: R$ 26,20
+              - button "Adicionar" [ref=f2e1041]
+        - article [ref=f2e1044] [cursor=pointer]:
+          - generic [ref=f2e1045]:
+            - img "Doce de Leite c/chocolate Pote" [ref=f2e1046]
+            - generic [ref=f2e1047]: Doce de Leite
+          - generic [ref=f2e1048]:
+            - heading "Doce de Leite c/chocolate Pote" [level=3] [ref=f2e1049]
+            - paragraph [ref=f2e1050]: Vidro 410g cx c/24
+            - generic [ref=f2e1051]:
+              - generic [ref=f2e1052]: R$ 26,20
+              - button "Adicionar" [ref=f2e1053]
+        - article [ref=f2e1056] [cursor=pointer]:
+          - generic [ref=f2e1057]:
+            - img "Doce de Leite cocada ao leite" [ref=f2e1058]
+            - generic [ref=f2e1059]: Doce de Leite
+          - generic [ref=f2e1060]:
+            - heading "Doce de Leite cocada ao leite" [level=3] [ref=f2e1061]
+            - paragraph [ref=f2e1062]: Vidro 400g cx c/24
+            - generic [ref=f2e1063]:
+              - generic [ref=f2e1064]: R$ 26,20
+              - button "Adicionar" [ref=f2e1065]
+        - article [ref=f2e1068] [cursor=pointer]:
+          - generic [ref=f2e1069]:
+            - img "Doce de Cajú em Calda Pote" [ref=f2e1070]
+            - generic [ref=f2e1071]: Doce de Leite
+          - generic [ref=f2e1072]:
+            - heading "Doce de Cajú em Calda Pote" [level=3] [ref=f2e1073]
+            - paragraph [ref=f2e1074]: Vidro 700g cx c/06
+            - generic [ref=f2e1075]:
+              - generic [ref=f2e1076]: R$ 25,99
+              - button "Adicionar" [ref=f2e1077]
+        - article [ref=f2e1080] [cursor=pointer]:
+          - generic [ref=f2e1081]:
+            - img "Doce de Leite zero açucar" [ref=f2e1082]
+            - generic [ref=f2e1083]: Doce de Leite
+          - generic [ref=f2e1084]:
+            - heading "Doce de Leite zero açucar" [level=3] [ref=f2e1085]
+            - paragraph [ref=f2e1086]: 215g cx c/24 unid
+            - generic [ref=f2e1087]:
+              - generic [ref=f2e1088]: R$ 27,20
+              - button "Adicionar" [ref=f2e1089]
+        - article [ref=f2e1092] [cursor=pointer]:
+          - generic [ref=f2e1093]:
+            - img "Doce de Leite zero lactose" [ref=f2e1094]
+            - generic [ref=f2e1095]: Doce de Leite
+          - generic [ref=f2e1096]:
+            - heading "Doce de Leite zero lactose" [level=3] [ref=f2e1097]
+            - paragraph [ref=f2e1098]: 215g cx c/24 unid
+            - generic [ref=f2e1099]:
+              - generic [ref=f2e1100]: R$ 20,90
+              - button "Adicionar" [ref=f2e1101]
+        - article [ref=f2e1104] [cursor=pointer]:
+          - generic [ref=f2e1105]:
+            - img "Doce de Leite em tabletes zero açucar" [ref=f2e1106]
+            - generic [ref=f2e1107]: Doce de Leite
+          - generic [ref=f2e1108]:
+            - heading "Doce de Leite em tabletes zero açucar" [level=3] [ref=f2e1109]
+            - paragraph [ref=f2e1110]: Display com 40 unidades de 23g
+            - generic [ref=f2e1111]:
+              - generic [ref=f2e1112]: R$ 152,00
+              - button "Adicionar" [ref=f2e1113]
+        - article [ref=f2e1116] [cursor=pointer]:
+          - generic [ref=f2e1117]:
+            - img "Creme de Avelã tradicional 140g e 350g" [ref=f2e1118]
+            - generic [ref=f2e1119]: Doce de Leite
+          - generic [ref=f2e1120]:
+            - heading "Creme de Avelã tradicional 140g e 350g" [level=3] [ref=f2e1121]
+            - paragraph [ref=f2e1122]
+            - generic [ref=f2e1123]:
+              - generic [ref=f2e1124]: R$ 11,70
+              - button "Adicionar" [ref=f2e1125]
+        - article [ref=f2e1128] [cursor=pointer]:
+          - generic [ref=f2e1129]:
+            - img "Creme de Avelã Crocante 140g" [ref=f2e1130]
+            - generic [ref=f2e1131]: Doce de Leite
+          - generic [ref=f2e1132]:
+            - heading "Creme de Avelã Crocante 140g" [level=3] [ref=f2e1133]
+            - paragraph [ref=f2e1134]
+            - generic [ref=f2e1135]:
+              - generic [ref=f2e1136]: R$ 11,70
+              - button "Adicionar" [ref=f2e1137]
+        - article [ref=f2e1140] [cursor=pointer]:
+          - generic [ref=f2e1141]:
+            - img "Creme de Avelã ao leite Divino Nut 140g" [ref=f2e1142]
+            - generic [ref=f2e1143]: Doce de Leite
+          - generic [ref=f2e1144]:
+            - heading "Creme de Avelã ao leite Divino Nut 140g" [level=3] [ref=f2e1145]
+            - paragraph
+            - generic [ref=f2e1146]:
+              - generic [ref=f2e1147]: R$ 11,70
+              - button "Adicionar" [ref=f2e1148]
+        - article [ref=f2e1151] [cursor=pointer]:
+          - generic [ref=f2e1152]:
+            - img "Doce Lili Jaca em Calda cx c/15" [ref=f2e1153]
+            - generic [ref=f2e1154]: Doce Lili
+          - generic [ref=f2e1155]:
+            - heading "Doce Lili Jaca em Calda cx c/15" [level=3] [ref=f2e1156]
+            - paragraph
+            - generic [ref=f2e1157]:
+              - generic [ref=f2e1158]: R$ 38,90
+              - button "Adicionar" [ref=f2e1159]
+        - article [ref=f2e1162] [cursor=pointer]:
+          - generic [ref=f2e1163]:
+            - img "Doce Lili Leite Massa" [ref=f2e1164]
+            - generic [ref=f2e1165]: Doce Lili
+          - generic [ref=f2e1166]:
+            - heading "Doce Lili Leite Massa" [level=3] [ref=f2e1167]
+            - paragraph [ref=f2e1168]
+            - generic [ref=f2e1169]:
+              - generic [ref=f2e1170]: R$ 31,99
+              - button "Adicionar" [ref=f2e1171]
+        - article [ref=f2e1174] [cursor=pointer]:
+          - generic [ref=f2e1175]:
+            - img "Doce Lili Goiaba em calda" [ref=f2e1176]
+            - generic [ref=f2e1177]: Doce Lili
+          - generic [ref=f2e1178]:
+            - heading "Doce Lili Goiaba em calda" [level=3] [ref=f2e1179]
+            - paragraph [ref=f2e1180]
+            - generic [ref=f2e1181]:
+              - generic [ref=f2e1182]: R$ 31,99
+              - button "Adicionar" [ref=f2e1183]
+        - article [ref=f2e1186] [cursor=pointer]:
+          - generic [ref=f2e1187]:
+            - img "Doce Lili Leite em Calda" [ref=f2e1188]
+            - generic [ref=f2e1189]: Doce Lili
+          - generic [ref=f2e1190]:
+            - heading "Doce Lili Leite em Calda" [level=3] [ref=f2e1191]
+            - paragraph
+            - generic [ref=f2e1192]:
+              - generic [ref=f2e1193]: A combinar
+              - button "Adicionar" [ref=f2e1194]
+        - article [ref=f2e1197] [cursor=pointer]:
+          - generic [ref=f2e1198]:
+            - img "Doce Lili de Leite Com Ameixa" [ref=f2e1199]
+            - generic [ref=f2e1200]: Doce Lili
+          - generic [ref=f2e1201]:
+            - heading "Doce Lili de Leite Com Ameixa" [level=3] [ref=f2e1202]
+            - paragraph [ref=f2e1203]
+            - generic [ref=f2e1204]:
+              - generic [ref=f2e1205]: R$ 31,99
+              - button "Adicionar" [ref=f2e1206]
+        - article [ref=f2e1209] [cursor=pointer]:
+          - generic [ref=f2e1210]:
+            - img "Doce Lili de Leite Com Maracujá" [ref=f2e1211]
+            - generic [ref=f2e1212]: Doce Lili
+          - generic [ref=f2e1213]:
+            - heading "Doce Lili de Leite Com Maracujá" [level=3] [ref=f2e1214]
+            - paragraph [ref=f2e1215]
+            - generic [ref=f2e1216]:
+              - generic [ref=f2e1217]: R$ 31,99
+              - button "Adicionar" [ref=f2e1218]
+        - article [ref=f2e1221] [cursor=pointer]:
+          - generic [ref=f2e1222]:
+            - img "Doce Lili Banana em Calda" [ref=f2e1223]
+            - generic [ref=f2e1224]: Doce Lili
+          - generic [ref=f2e1225]:
+            - heading "Doce Lili Banana em Calda" [level=3] [ref=f2e1226]
+            - paragraph [ref=f2e1227]
+            - generic [ref=f2e1228]:
+              - generic [ref=f2e1229]: R$ 22,99
+              - button "Adicionar" [ref=f2e1230]
+        - article [ref=f2e1233] [cursor=pointer]:
+          - generic [ref=f2e1234]:
+            - img "Doce Lili Limão em Calda Cx/15" [ref=f2e1235]
+            - generic [ref=f2e1236]: Doce Lili
+          - generic [ref=f2e1237]:
+            - heading "Doce Lili Limão em Calda Cx/15" [level=3] [ref=f2e1238]
+            - paragraph
+            - generic [ref=f2e1239]:
+              - generic [ref=f2e1240]: R$ 36,99
+              - button "Adicionar" [ref=f2e1241]
+        - article [ref=f2e1244] [cursor=pointer]:
+          - generic [ref=f2e1245]:
+            - img "Doce Lili Laranja em Calda Cx/15" [ref=f2e1246]
+            - generic [ref=f2e1247]: Doce Lili
+          - generic [ref=f2e1248]:
+            - heading "Doce Lili Laranja em Calda Cx/15" [level=3] [ref=f2e1249]
+            - paragraph
+            - generic [ref=f2e1250]:
+              - generic [ref=f2e1251]: R$ 22,99
+              - button "Adicionar" [ref=f2e1252]
+        - article [ref=f2e1255] [cursor=pointer]:
+          - generic [ref=f2e1256]:
+            - img "Doce Lili Mamão em Calda Cx/15" [ref=f2e1257]
+            - generic [ref=f2e1258]: Doce Lili
+          - generic [ref=f2e1259]:
+            - heading "Doce Lili Mamão em Calda Cx/15" [level=3] [ref=f2e1260]
+            - paragraph
+            - generic [ref=f2e1261]:
+              - generic [ref=f2e1262]: R$ 22,99
+              - button "Adicionar" [ref=f2e1263]
+        - article [ref=f2e1266] [cursor=pointer]:
+          - generic [ref=f2e1267]:
+            - img "Doce Lili Leite c/ Goiaba em Calda Cx/15" [ref=f2e1268]
+            - generic [ref=f2e1269]: Doce Lili
+          - generic [ref=f2e1270]:
+            - heading "Doce Lili Leite c/ Goiaba em Calda Cx/15" [level=3] [ref=f2e1271]
+            - paragraph
+            - generic [ref=f2e1272]:
+              - generic [ref=f2e1273]: R$ 31,99
+              - button "Adicionar" [ref=f2e1274]
+        - article [ref=f2e1277] [cursor=pointer]:
+          - generic [ref=f2e1278]:
+            - img "Doce Lili Cajú em Barra c/castanha 500g" [ref=f2e1279]
+            - generic [ref=f2e1280]: Doce Lili
+          - generic [ref=f2e1281]:
+            - heading "Doce Lili Cajú em Barra c/castanha 500g" [level=3] [ref=f2e1282]
+            - paragraph [ref=f2e1283]
+            - generic [ref=f2e1284]:
+              - generic [ref=f2e1285]: R$ 12,00
+              - button "Adicionar" [ref=f2e1286]
+        - article [ref=f2e1289] [cursor=pointer]:
+          - generic [ref=f2e1290]:
+            - img "Doce Lili, Goiaba c/Castanha em Barra 500g" [ref=f2e1291]
+            - generic [ref=f2e1292]: Doce Lili
+          - generic [ref=f2e1293]:
+            - heading "Doce Lili, Goiaba c/Castanha em Barra 500g" [level=3] [ref=f2e1294]
+            - paragraph [ref=f2e1295]
+            - generic [ref=f2e1296]:
+              - generic [ref=f2e1297]: R$ 12,00
+              - button "Adicionar" [ref=f2e1298]
+        - article [ref=f2e1301] [cursor=pointer]:
+          - generic [ref=f2e1302]:
+            - img "Cajumix 500ml" [ref=f2e1303]
+            - generic [ref=f2e1304]: Bebidas
+          - generic [ref=f2e1305]:
+            - heading "Cajumix 500ml" [level=3] [ref=f2e1306]
+            - paragraph [ref=f2e1307]: Fardo c/6
+            - generic [ref=f2e1308]:
+              - generic [ref=f2e1309]: R$ 40,00
+              - button "Adicionar" [ref=f2e1310]
+        - article [ref=f2e1313] [cursor=pointer]:
+          - generic [ref=f2e1314]:
+            - img "Cajumix Fire 500ml" [ref=f2e1315]
+            - generic [ref=f2e1316]: Bebidas
+          - generic [ref=f2e1317]:
+            - heading "Cajumix Fire 500ml" [level=3] [ref=f2e1318]
+            - paragraph [ref=f2e1319]: Fardo c/6
+            - generic [ref=f2e1320]:
+              - generic [ref=f2e1321]: R$ 42,00
+              - button "Adicionar" [ref=f2e1322]
+        - article [ref=f2e1325] [cursor=pointer]:
+          - generic [ref=f2e1326]:
+            - img "Cajuina Brasucos 500ml" [ref=f2e1327]
+            - generic [ref=f2e1328]: Bebidas
+          - generic [ref=f2e1329]:
+            - heading "Cajuina Brasucos 500ml" [level=3] [ref=f2e1330]
+            - paragraph [ref=f2e1331]: Fardo c/12
+            - generic [ref=f2e1332]:
+              - generic [ref=f2e1333]: R$ 82,00
+              - button "Adicionar" [ref=f2e1334]
+        - article [ref=f2e1337] [cursor=pointer]:
+          - generic [ref=f2e1338]:
+            - img "Água Viena c/ gás 510ml" [ref=f2e1339]
+            - generic [ref=f2e1340]: Bebidas
+          - generic [ref=f2e1341]:
+            - heading "Água Viena c/ gás 510ml" [level=3] [ref=f2e1342]
+            - paragraph [ref=f2e1343]: Fardo c/12
+            - generic [ref=f2e1344]:
+              - generic [ref=f2e1345]: R$ 22,50
+              - button "Adicionar" [ref=f2e1346]
+        - article [ref=f2e1349] [cursor=pointer]:
+          - generic [ref=f2e1350]:
+            - img "Água Viena sem gás 510ml" [ref=f2e1351]
+            - generic [ref=f2e1352]: Bebidas
+          - generic [ref=f2e1353]:
+            - heading "Água Viena sem gás 510ml" [level=3] [ref=f2e1354]
+            - paragraph [ref=f2e1355]: Fardo c/12
+            - generic [ref=f2e1356]:
+              - generic [ref=f2e1357]: R$ 17,50
+              - button "Adicionar" [ref=f2e1358]
+        - article [ref=f2e1361] [cursor=pointer]:
+          - generic [ref=f2e1362]:
+            - img "Sal Rosa do Himalaia" [ref=f2e1363]
+            - generic [ref=f2e1364]: Temperos e Sal
+          - generic [ref=f2e1365]:
+            - heading "Sal Rosa do Himalaia" [level=3] [ref=f2e1366]
+            - paragraph [ref=f2e1367]: cx c/12
+            - generic [ref=f2e1368]:
+              - generic [ref=f2e1369]: R$ 4,99
+              - button "Adicionar" [ref=f2e1370]
+        - article [ref=f2e1373] [cursor=pointer]:
+          - generic [ref=f2e1374]:
+            - img "Caldo de Galinha sem glutamato de sódio" [ref=f2e1375]
+            - generic [ref=f2e1376]: Temperos e Sal
+          - generic [ref=f2e1377]:
+            - heading "Caldo de Galinha sem glutamato de sódio" [level=3] [ref=f2e1378]
+            - paragraph [ref=f2e1379]: pote 150g cx c/12
+            - generic [ref=f2e1380]:
+              - generic [ref=f2e1381]: R$ 4,99
+              - button "Adicionar" [ref=f2e1382]
+        - article [ref=f2e1385] [cursor=pointer]:
+          - generic [ref=f2e1386]:
+            - img "Tempero Ana Maria, sem glutamato de sódio" [ref=f2e1387]
+            - generic [ref=f2e1388]: Temperos e Sal
+          - generic [ref=f2e1389]:
+            - heading "Tempero Ana Maria, sem glutamato de sódio" [level=3] [ref=f2e1390]
+            - paragraph [ref=f2e1391]: pote 100g cx c/12
+            - generic [ref=f2e1392]:
+              - generic [ref=f2e1393]: R$ 6,49
+              - button "Adicionar" [ref=f2e1394]
+        - article [ref=f2e1397] [cursor=pointer]:
+          - generic [ref=f2e1398]:
+            - img "Tempero Páprica Picante, sem glutamato de sódio" [ref=f2e1399]
+            - generic [ref=f2e1400]: Temperos e Sal
+          - generic [ref=f2e1401]:
+            - heading "Tempero Páprica Picante, sem glutamato de sódio" [level=3] [ref=f2e1402]
+            - paragraph [ref=f2e1403]: pote 100g cx c/12
+            - generic [ref=f2e1404]:
+              - generic [ref=f2e1405]: R$ 4,99
+              - button "Adicionar" [ref=f2e1406]
+        - article [ref=f2e1409] [cursor=pointer]:
+          - generic [ref=f2e1410]:
+            - img "Caldo de Carne sem glutamato de sódio" [ref=f2e1411]
+            - generic [ref=f2e1412]: Temperos e Sal
+          - generic [ref=f2e1413]:
+            - heading "Caldo de Carne sem glutamato de sódio" [level=3] [ref=f2e1414]
+            - paragraph [ref=f2e1415]: pote 150g cx c/12
+            - generic [ref=f2e1416]:
+              - generic [ref=f2e1417]: R$ 4,99
+              - button "Adicionar" [ref=f2e1418]
+        - article [ref=f2e1421] [cursor=pointer]:
+          - generic [ref=f2e1422]:
+            - img "Tempero Famoso, Edu Guedes, sem glutamato de sódio" [ref=f2e1423]
+            - generic [ref=f2e1424]: Temperos e Sal
+          - generic [ref=f2e1425]:
+            - heading "Tempero Famoso, Edu Guedes, sem glutamato de sódio" [level=3] [ref=f2e1426]
+            - paragraph [ref=f2e1427]: pote 100g cx c/12
+            - generic [ref=f2e1428]:
+              - generic [ref=f2e1429]: R$ 6,49
+              - button "Adicionar" [ref=f2e1430]
+        - article [ref=f2e1433] [cursor=pointer]:
+          - generic [ref=f2e1434]:
+            - img "Colorau, sem glutamato de sódio" [ref=f2e1435]
+            - generic [ref=f2e1436]: Temperos e Sal
+          - generic [ref=f2e1437]:
+            - heading "Colorau, sem glutamato de sódio" [level=3] [ref=f2e1438]
+            - paragraph [ref=f2e1439]: pote 100g cx c/12
+            - generic [ref=f2e1440]:
+              - generic [ref=f2e1441]: A combinar
+              - button "Adicionar" [ref=f2e1442]
+        - article [ref=f2e1445] [cursor=pointer]:
+          - generic [ref=f2e1446]:
+            - img "Castanha de Cajú" [ref=f2e1447]
+            - generic [ref=f2e1448]: Temperos e Sal
+          - generic [ref=f2e1449]:
+            - heading "Castanha de Cajú" [level=3] [ref=f2e1450]
+            - paragraph [ref=f2e1451]: todos sem glutamato de sódio
+            - generic [ref=f2e1452]:
+              - generic [ref=f2e1453]: R$ 9,90
+              - button "Adicionar" [ref=f2e1454]
+        - article [ref=f2e1457] [cursor=pointer]:
+          - generic [ref=f2e1458]:
+            - img "Castanha do Pará" [ref=f2e1459]
+            - generic [ref=f2e1460]: Temperos e Sal
+          - generic [ref=f2e1461]:
+            - heading "Castanha do Pará" [level=3] [ref=f2e1462]
+            - paragraph [ref=f2e1463]: todos sem glutamato de sódio
+            - generic [ref=f2e1464]:
+              - generic [ref=f2e1465]: A combinar
+              - button "Adicionar" [ref=f2e1466]
+        - article [ref=f2e1469] [cursor=pointer]:
+          - generic [ref=f2e1470]:
+            - img "Pimenta preta moída" [ref=f2e1471]
+            - generic [ref=f2e1472]: Temperos e Sal
+          - generic [ref=f2e1473]:
+            - heading "Pimenta preta moída" [level=3] [ref=f2e1474]
+            - paragraph [ref=f2e1475]: todos sem glutamato de sódio
+            - generic [ref=f2e1476]:
+              - generic [ref=f2e1477]: R$ 8,99
+              - button "Adicionar" [ref=f2e1478]
+        - article [ref=f2e1481] [cursor=pointer]:
+          - generic [ref=f2e1482]:
+            - img "Tempero Baiano" [ref=f2e1483]
+            - generic [ref=f2e1484]: Temperos e Sal
+          - generic [ref=f2e1485]:
+            - heading "Tempero Baiano" [level=3] [ref=f2e1486]
+            - paragraph [ref=f2e1487]: todos sem glutamato de sódio
+            - generic [ref=f2e1488]:
+              - generic [ref=f2e1489]: R$ 4,99
+              - button "Adicionar" [ref=f2e1490]
+        - article [ref=f2e1493] [cursor=pointer]:
+          - generic [ref=f2e1494]:
+            - img "Alho Frito" [ref=f2e1495]
+            - generic [ref=f2e1496]: Temperos e Sal
+          - generic [ref=f2e1497]:
+            - heading "Alho Frito" [level=3] [ref=f2e1498]
+            - paragraph [ref=f2e1499]: todos sem glutamato de sódio
+            - generic [ref=f2e1500]:
+              - generic [ref=f2e1501]: R$ 5,99
+              - button "Adicionar" [ref=f2e1502]
+        - article [ref=f2e1505] [cursor=pointer]:
+          - generic [ref=f2e1506]:
+            - img "Bicarbonato de sódio" [ref=f2e1507]
+            - generic [ref=f2e1508]: Temperos e Sal
+          - generic [ref=f2e1509]:
+            - heading "Bicarbonato de sódio" [level=3] [ref=f2e1510]
+            - paragraph [ref=f2e1511]: todos sem glutamato de sódio
+            - generic [ref=f2e1512]:
+              - generic [ref=f2e1513]: A combinar
+              - button "Adicionar" [ref=f2e1514]
+        - article [ref=f2e1517] [cursor=pointer]:
+          - generic [ref=f2e1518]:
+            - img "Chimichurri sem pimenta" [ref=f2e1519]
+            - generic [ref=f2e1520]: Temperos e Sal
+          - generic [ref=f2e1521]:
+            - heading "Chimichurri sem pimenta" [level=3] [ref=f2e1522]
+            - paragraph [ref=f2e1523]: todos sem glutamato de sódio
+            - generic [ref=f2e1524]:
+              - generic [ref=f2e1525]: R$ 6,49
+              - button "Adicionar" [ref=f2e1526]
+        - article [ref=f2e1529] [cursor=pointer]:
+          - generic [ref=f2e1530]:
+            - img "Chimichurri com pimenta" [ref=f2e1531]
+            - generic [ref=f2e1532]: Temperos e Sal
+          - generic [ref=f2e1533]:
+            - heading "Chimichurri com pimenta" [level=3] [ref=f2e1534]
+            - paragraph [ref=f2e1535]: todos sem glutamato de sódio
+            - generic [ref=f2e1536]:
+              - generic [ref=f2e1537]: R$ 6,49
+              - button "Adicionar" [ref=f2e1538]
+        - article [ref=f2e1541] [cursor=pointer]:
+          - generic [ref=f2e1542]:
+            - img "Lemon Pepper" [ref=f2e1543]
+            - generic [ref=f2e1544]: Temperos e Sal
+          - generic [ref=f2e1545]:
+            - heading "Lemon Pepper" [level=3] [ref=f2e1546]
+            - paragraph [ref=f2e1547]: todos sem glutamato de sódio
+            - generic [ref=f2e1548]:
+              - generic [ref=f2e1549]: R$ 6,49
+              - button "Adicionar" [ref=f2e1550]
+        - article [ref=f2e1553] [cursor=pointer]:
+          - generic [ref=f2e1554]:
+            - img "Açafrão" [ref=f2e1555]
+            - generic [ref=f2e1556]: Temperos e Sal
+          - generic [ref=f2e1557]:
+            - heading "Açafrão" [level=3] [ref=f2e1558]
+            - paragraph [ref=f2e1559]: todos sem glutamato de sódio
+            - generic [ref=f2e1560]:
+              - generic [ref=f2e1561]: R$ 4,99
+              - button "Adicionar" [ref=f2e1562]
+        - article [ref=f2e1565] [cursor=pointer]:
+          - generic [ref=f2e1566]:
+            - img "Cominho" [ref=f2e1567]
+            - generic [ref=f2e1568]: Temperos e Sal
+          - generic [ref=f2e1569]:
+            - heading "Cominho" [level=3] [ref=f2e1570]
+            - paragraph [ref=f2e1571]: todos sem glutamato de sódio
+            - generic [ref=f2e1572]:
+              - generic [ref=f2e1573]: R$ 4,99
+              - button "Adicionar" [ref=f2e1574]
+        - article [ref=f2e1577] [cursor=pointer]:
+          - generic [ref=f2e1578]:
+            - img "Páprica doce" [ref=f2e1579]
+            - generic [ref=f2e1580]: Temperos e Sal
+          - generic [ref=f2e1581]:
+            - heading "Páprica doce" [level=3] [ref=f2e1582]
+            - paragraph [ref=f2e1583]: todos sem glutamato de sódio
+            - generic [ref=f2e1584]:
+              - generic [ref=f2e1585]: R$ 4,99
+              - button "Adicionar" [ref=f2e1586]
+        - article [ref=f2e1589] [cursor=pointer]:
+          - generic [ref=f2e1590]:
+            - img "Páprica Defumada" [ref=f2e1591]
+            - generic [ref=f2e1592]: Temperos e Sal
+          - generic [ref=f2e1593]:
+            - heading "Páprica Defumada" [level=3] [ref=f2e1594]
+            - paragraph [ref=f2e1595]: todos sem glutamato de sódio
+            - generic [ref=f2e1596]:
+              - generic [ref=f2e1597]: R$ 5,29
+              - button "Adicionar" [ref=f2e1598]
+        - article [ref=f2e1601] [cursor=pointer]:
+          - generic [ref=f2e1602]:
+            - img "Sal de Parrilla Ex. Sabor 330g" [ref=f2e1603]
+            - generic [ref=f2e1604]: Temperos e Sal
+          - generic [ref=f2e1605]:
+            - heading "Sal de Parrilla Ex. Sabor 330g" [level=3] [ref=f2e1606]
+            - paragraph [ref=f2e1607]: Lemon Pepper Cx/12
+            - generic [ref=f2e1608]:
+              - generic [ref=f2e1609]: R$ 13,99
+              - button "Adicionar" [ref=f2e1610]
+        - article [ref=f2e1613] [cursor=pointer]:
+          - generic [ref=f2e1614]:
+            - img "Sal de Parrilla Ex. Sabor 330g" [ref=f2e1615]
+            - generic [ref=f2e1616]: Temperos e Sal
+          - generic [ref=f2e1617]:
+            - heading "Sal de Parrilla Ex. Sabor 330g" [level=3] [ref=f2e1618]
+            - paragraph [ref=f2e1619]: Pimenta Preta Cx/12
+            - generic [ref=f2e1620]:
+              - generic [ref=f2e1621]: R$ 13,99
+              - button "Adicionar" [ref=f2e1622]
+        - article [ref=f2e1625] [cursor=pointer]:
+          - generic [ref=f2e1626]:
+            - img "Sal de Parrilla Ex. Sabor 330g" [ref=f2e1627]
+            - generic [ref=f2e1628]: Temperos e Sal
+          - generic [ref=f2e1629]:
+            - heading "Sal de Parrilla Ex. Sabor 330g" [level=3] [ref=f2e1630]
+            - paragraph [ref=f2e1631]: Uruguaio Cx/12
+            - generic [ref=f2e1632]:
+              - generic [ref=f2e1633]: R$ 13,99
+              - button "Adicionar" [ref=f2e1634]
+        - article [ref=f2e1637] [cursor=pointer]:
+          - generic [ref=f2e1638]:
+            - img "Sal de Parrilla Ex. Sabor 330g" [ref=f2e1639]
+            - generic [ref=f2e1640]: Temperos e Sal
+          - generic [ref=f2e1641]:
+            - heading "Sal de Parrilla Ex. Sabor 330g" [level=3] [ref=f2e1642]
+            - paragraph [ref=f2e1643]: Chimichurri Cx/12
+            - generic [ref=f2e1644]:
+              - generic [ref=f2e1645]: R$ 13,99
+              - button "Adicionar" [ref=f2e1646]
+        - article [ref=f2e1649] [cursor=pointer]:
+          - generic [ref=f2e1650]:
+            - img "Sal de Parrilla Ex. Sabor 330g" [ref=f2e1651]
+            - generic [ref=f2e1652]: Temperos e Sal
+          - generic [ref=f2e1653]:
+            - heading "Sal de Parrilla Ex. Sabor 330g" [level=3] [ref=f2e1654]
+            - paragraph [ref=f2e1655]: Frango Cx/12
+            - generic [ref=f2e1656]:
+              - generic [ref=f2e1657]: R$ 13,99
+              - button "Adicionar" [ref=f2e1658]
+        - article [ref=f2e1661] [cursor=pointer]:
+          - generic [ref=f2e1662]:
+            - img "Acendedor de Carvão, display" [ref=f2e1663]
+            - generic [ref=f2e1664]: Temperos e Sal
+          - generic [ref=f2e1665]:
+            - heading "Acendedor de Carvão, display" [level=3] [ref=f2e1666]
+            - paragraph [ref=f2e1667]: com 12 cx cada uma c/6
+            - generic [ref=f2e1668]:
+              - generic [ref=f2e1669]: R$ 5,99
+              - button "Adicionar" [ref=f2e1670]
+        - article [ref=f2e1673] [cursor=pointer]:
+          - generic [ref=f2e1674]:
+            - img "Óleo de Coco Extra Virgem 200ml" [ref=f2e1675]
+            - generic [ref=f2e1676]: Temperos e Sal
+          - generic [ref=f2e1677]:
+            - heading "Óleo de Coco Extra Virgem 200ml" [level=3] [ref=f2e1678]
+            - paragraph [ref=f2e1679]
+            - generic [ref=f2e1680]:
+              - generic [ref=f2e1681]: R$ 22,90
+              - button "Adicionar" [ref=f2e1682]
+        - article [ref=f2e1685] [cursor=pointer]:
+          - generic [ref=f2e1686]:
+            - img "Pimenta Gourmet Carolina Reaper, 60ml" [ref=f2e1687]
+            - generic [ref=f2e1688]: Pimentas Gourmet
+          - generic [ref=f2e1689]:
+            - heading "Pimenta Gourmet Carolina Reaper, 60ml" [level=3] [ref=f2e1690]
+            - paragraph [ref=f2e1691]: a pimenta mais gostosa do mundo, Fardo c/ 12 Unid.
+            - generic [ref=f2e1692]:
+              - generic [ref=f2e1693]: R$ 15,20
+              - button "Adicionar" [ref=f2e1694]
+        - article [ref=f2e1697] [cursor=pointer]:
+          - generic [ref=f2e1698]:
+            - img "Pimenta Gourmet ao leite de Coco" [ref=f2e1699]
+            - generic [ref=f2e1700]: Pimentas Gourmet
+          - generic [ref=f2e1701]:
+            - heading "Pimenta Gourmet ao leite de Coco" [level=3] [ref=f2e1702]
+            - paragraph [ref=f2e1703]: 150ml, Fardo c/ 12 Unid.
+            - generic [ref=f2e1704]:
+              - generic [ref=f2e1705]: R$ 8,50
+              - button "Adicionar" [ref=f2e1706]
+        - article [ref=f2e1709] [cursor=pointer]:
+          - generic [ref=f2e1710]:
+            - img "Pimenta Gourmet ao molho de Pequi" [ref=f2e1711]
+            - generic [ref=f2e1712]: Pimentas Gourmet
+          - generic [ref=f2e1713]:
+            - heading "Pimenta Gourmet ao molho de Pequi" [level=3] [ref=f2e1714]
+            - paragraph [ref=f2e1715]: 150ml, Fardo c/ 12 Unid.
+            - generic [ref=f2e1716]:
+              - generic [ref=f2e1717]: R$ 8,50
+              - button "Adicionar" [ref=f2e1718]
+        - article [ref=f2e1721] [cursor=pointer]:
+          - generic [ref=f2e1722]:
+            - img "Pimenta Especial gota serena" [ref=f2e1723]
+            - generic [ref=f2e1724]: Pimentas Gourmet
+          - generic [ref=f2e1725]:
+            - heading "Pimenta Especial gota serena" [level=3] [ref=f2e1726]
+            - paragraph [ref=f2e1727]: 150ml Fardo c/ 12 Unid.
+            - generic [ref=f2e1728]:
+              - generic [ref=f2e1729]: R$ 6,30
+              - button "Adicionar" [ref=f2e1730]
+        - article [ref=f2e1733] [cursor=pointer]:
+          - generic [ref=f2e1734]:
+            - img "Pimenta especial em conserva" [ref=f2e1735]
+            - generic [ref=f2e1736]: Pimentas Gourmet
+          - generic [ref=f2e1737]:
+            - heading "Pimenta especial em conserva" [level=3] [ref=f2e1738]
+            - paragraph [ref=f2e1739]: 150ml, fardo c/ 12 Unid.
+            - generic [ref=f2e1740]:
+              - generic [ref=f2e1741]: R$ 9,30
+              - button "Adicionar" [ref=f2e1742]
+        - article [ref=f2e1745] [cursor=pointer]:
+          - generic [ref=f2e1746]:
+            - img "Pimenta especial Larva de Vulcão" [ref=f2e1747]
+            - generic [ref=f2e1748]: Pimentas Gourmet
+          - generic [ref=f2e1749]:
+            - heading "Pimenta especial Larva de Vulcão" [level=3] [ref=f2e1750]
+            - paragraph [ref=f2e1751]: 100ml, Fardo c/12 Unid.
+            - generic [ref=f2e1752]:
+              - generic [ref=f2e1753]: R$ 8,50
+              - button "Adicionar" [ref=f2e1754]
+        - article [ref=f2e1757] [cursor=pointer]:
+          - generic [ref=f2e1758]:
+            - img "Molho Gourmet para preparo de vários pratos" [ref=f2e1759]
+            - generic [ref=f2e1760]: Pimentas Gourmet
+          - generic [ref=f2e1761]:
+            - heading "Molho Gourmet para preparo de vários pratos" [level=3] [ref=f2e1762]
+            - paragraph [ref=f2e1763]: 300ml, fardo c/12 unid.
+            - generic [ref=f2e1764]:
+              - generic [ref=f2e1765]: R$ 6,99
+              - button "Adicionar" [ref=f2e1766]
+        - article [ref=f2e1769] [cursor=pointer]:
+          - generic [ref=f2e1770]:
+            - img "Molho Gourmet para Carnes" [ref=f2e1771]
+            - generic [ref=f2e1772]: Pimentas Gourmet
+          - generic [ref=f2e1773]:
+            - heading "Molho Gourmet para Carnes" [level=3] [ref=f2e1774]
+            - paragraph [ref=f2e1775]: 300ml, fardos c/12 Unid.
+            - generic [ref=f2e1776]:
+              - generic [ref=f2e1777]: R$ 6,99
+              - button "Adicionar" [ref=f2e1778]
+        - article [ref=f2e1781] [cursor=pointer]:
+          - generic [ref=f2e1782]:
+            - img "Molho Cremoso Extra Forte" [ref=f2e1783]
+            - generic [ref=f2e1784]: Molhos
+          - generic [ref=f2e1785]:
+            - heading "Molho Cremoso Extra Forte" [level=3] [ref=f2e1786]
+            - paragraph [ref=f2e1787]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1788]:
+              - generic [ref=f2e1789]: R$ 5,99
+              - button "Adicionar" [ref=f2e1790]
+        - article [ref=f2e1793] [cursor=pointer]:
+          - generic [ref=f2e1794]:
+            - img "Molho Cremoso Delícia Picante" [ref=f2e1795]
+            - generic [ref=f2e1796]: Molhos
+          - generic [ref=f2e1797]:
+            - heading "Molho Cremoso Delícia Picante" [level=3] [ref=f2e1798]
+            - paragraph [ref=f2e1799]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1800]:
+              - generic [ref=f2e1801]: R$ 5,99
+              - button "Adicionar" [ref=f2e1802]
+        - article [ref=f2e1805] [cursor=pointer]:
+          - generic [ref=f2e1806]:
+            - img "Molho Cremoso Ervas Finas" [ref=f2e1807]
+            - generic [ref=f2e1808]: Molhos
+          - generic [ref=f2e1809]:
+            - heading "Molho Cremoso Ervas Finas" [level=3] [ref=f2e1810]
+            - paragraph [ref=f2e1811]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1812]:
+              - generic [ref=f2e1813]: R$ 5,99
+              - button "Adicionar" [ref=f2e1814]
+        - article [ref=f2e1817] [cursor=pointer]:
+          - generic [ref=f2e1818]:
+            - img "Molho Pequi" [ref=f2e1819]
+            - generic [ref=f2e1820]: Molhos
+          - generic [ref=f2e1821]:
+            - heading "Molho Pequi" [level=3] [ref=f2e1822]
+            - paragraph [ref=f2e1823]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1824]:
+              - generic [ref=f2e1825]: R$ 5,99
+              - button "Adicionar" [ref=f2e1826]
+        - article [ref=f2e1829] [cursor=pointer]:
+          - generic [ref=f2e1830]:
+            - img "Molho Carolina Reaper" [ref=f2e1831]
+            - generic [ref=f2e1832]: Molhos
+          - generic [ref=f2e1833]:
+            - heading "Molho Carolina Reaper" [level=3] [ref=f2e1834]
+            - paragraph [ref=f2e1835]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1836]:
+              - generic [ref=f2e1837]: R$ 10,37
+              - button "Adicionar" [ref=f2e1838]
+        - article [ref=f2e1841] [cursor=pointer]:
+          - generic [ref=f2e1842]:
+            - img "Molho Pimenta Vermelha" [ref=f2e1843]
+            - generic [ref=f2e1844]: Molhos
+          - generic [ref=f2e1845]:
+            - heading "Molho Pimenta Vermelha" [level=3] [ref=f2e1846]
+            - paragraph [ref=f2e1847]: Cremoso especial de Pimenta Brasileiríssimo
+            - generic [ref=f2e1848]:
+              - generic [ref=f2e1849]: R$ 3,99
+              - button "Adicionar" [ref=f2e1850]
+        - article [ref=f2e1853] [cursor=pointer]:
+          - generic [ref=f2e1854]:
+            - img "Calabresa com especiarias" [ref=f2e1855]
+            - generic [ref=f2e1856]: Molhos
+          - generic [ref=f2e1857]:
+            - heading "Calabresa com especiarias" [level=3] [ref=f2e1858]
+            - paragraph [ref=f2e1859]
+            - generic [ref=f2e1860]:
+              - generic [ref=f2e1861]: R$ 5,99
+              - button "Adicionar" [ref=f2e1862]
+        - article [ref=f2e1865] [cursor=pointer]:
+          - generic [ref=f2e1866]:
+            - img "Barbecue Chipotle" [ref=f2e1867]
+            - generic [ref=f2e1868]: Molhos
+          - generic [ref=f2e1869]:
+            - heading "Barbecue Chipotle" [level=3] [ref=f2e1870]
+            - paragraph [ref=f2e1871]
+            - generic [ref=f2e1872]:
+              - generic [ref=f2e1873]: R$ 5,99
+              - button "Adicionar" [ref=f2e1874]
+        - article [ref=f2e1877] [cursor=pointer]:
+          - generic [ref=f2e1878]:
+            - img "Molho Shoyo" [ref=f2e1879]
+            - generic [ref=f2e1880]: Molhos
+          - generic [ref=f2e1881]:
+            - heading "Molho Shoyo" [level=3] [ref=f2e1882]
+            - paragraph [ref=f2e1883]
+            - generic [ref=f2e1884]:
+              - generic [ref=f2e1885]: R$ 3,99
+              - button "Adicionar" [ref=f2e1886]
+        - article [ref=f2e1889] [cursor=pointer]:
+          - generic [ref=f2e1890]:
+            - img "Molho Salada Tipo Italiano" [ref=f2e1891]
+            - generic [ref=f2e1892]: Molhos
+          - generic [ref=f2e1893]:
+            - heading "Molho Salada Tipo Italiano" [level=3] [ref=f2e1894]
+            - paragraph
+            - generic [ref=f2e1895]:
+              - generic [ref=f2e1896]: A combinar
+              - button "Adicionar" [ref=f2e1897]
+        - article [ref=f2e1900] [cursor=pointer]:
+          - generic [ref=f2e1901]:
+            - img "Molho Salada Limão" [ref=f2e1902]
+            - generic [ref=f2e1903]: Molhos
+          - generic [ref=f2e1904]:
+            - heading "Molho Salada Limão" [level=3] [ref=f2e1905]
+            - paragraph [ref=f2e1906]
+            - generic [ref=f2e1907]:
+              - generic [ref=f2e1908]: A combinar
+              - button "Adicionar" [ref=f2e1909]
+        - article [ref=f2e1912] [cursor=pointer]:
+          - generic [ref=f2e1913]:
+            - img "Molho Salada Rose" [ref=f2e1914]
+            - generic [ref=f2e1915]: Molhos
+          - generic [ref=f2e1916]:
+            - heading "Molho Salada Rose" [level=3] [ref=f2e1917]
+            - paragraph [ref=f2e1918]
+            - generic [ref=f2e1919]:
+              - generic [ref=f2e1920]: R$ 7,88
+              - button "Adicionar" [ref=f2e1921]
+        - article [ref=f2e1924] [cursor=pointer]:
+          - generic [ref=f2e1925]:
+            - img "Poderoso Multi inseticida Aerosol (Mata Tudo)" [ref=f2e1926]
+            - generic [ref=f2e1927]: Lar e Odorizantes
+          - generic [ref=f2e1928]:
+            - heading "Poderoso Multi inseticida Aerosol (Mata Tudo)" [level=3] [ref=f2e1929]
+            - paragraph [ref=f2e1930]: "É indicado contra mosquitos, baratas, escorpiões, moscas, aranhas, formigas, pulgas e carrapatos. Desenvolvido em base aquosa utilizando a mais moderna tecnologia. Disponíveis: Citronela, Eucalipto, Mata Baratas, Mata escorpião."
+            - generic [ref=f2e1931]:
+              - generic [ref=f2e1932]: R$ 12,49
+              - button "Adicionar" [ref=f2e1933]
+        - article [ref=f2e1936] [cursor=pointer]:
+          - generic [ref=f2e1937]:
+            - img "Gel inseticida para baratas" [ref=f2e1938]
+            - generic [ref=f2e1939]: Lar e Odorizantes
+          - generic [ref=f2e1940]:
+            - heading "Gel inseticida para baratas" [level=3] [ref=f2e1941]
+            - paragraph [ref=f2e1942]: Gel inseticida para o combate a baratas alemãs – baratinhas (Blatella germânica) e também elimina a barata de esgoto ou voadeira (Periplaneta americana). Utilize o BARAKELL em casa e apartamentos.
+            - generic [ref=f2e1943]:
+              - generic [ref=f2e1944]: R$ 8,70
+              - button "Adicionar" [ref=f2e1945]
+        - article [ref=f2e1948] [cursor=pointer]:
+          - generic [ref=f2e1949]:
+            - img "Formikell" [ref=f2e1950]
+            - generic [ref=f2e1951]: Lar e Odorizantes
+          - generic [ref=f2e1952]:
+            - heading "Formikell" [level=3] [ref=f2e1953]
+            - paragraph [ref=f2e1954]: Eficaz contra formigas doceiras que são grandes causadoras de doenças.
+            - generic [ref=f2e1955]:
+              - generic [ref=f2e1956]: R$ 8,70
+              - button "Adicionar" [ref=f2e1957]
+        - article [ref=f2e1960] [cursor=pointer]:
+          - generic [ref=f2e1961]:
+            - img "Inseticida para moscas" [ref=f2e1962]
+            - generic [ref=f2e1963]: Lar e Odorizantes
+          - generic [ref=f2e1964]:
+            - heading "Inseticida para moscas" [level=3] [ref=f2e1965]
+            - paragraph [ref=f2e1966]: Inseticida com atrativo sexual, eficaz contra moscas. Aplicar filetes de 10cm de distância onde as moscas pousam.
+            - generic [ref=f2e1967]:
+              - generic [ref=f2e1968]: R$ 8,70
+              - button "Adicionar" [ref=f2e1969]
+        - article [ref=f2e1972] [cursor=pointer]:
+          - generic [ref=f2e1973]:
+            - img "Odorizadores de Ambientes" [ref=f2e1974]
+            - generic [ref=f2e1975]: Lar e Odorizantes
+          - generic [ref=f2e1976]:
+            - heading "Odorizadores de Ambientes" [level=3] [ref=f2e1977]
+            - paragraph [ref=f2e1978]: "Desenvolvido e formulado com exclusivas fragrâncias para refrescar o seu ambiente, criando um ambiente suavemente perfumado. É recomendado o uso em locais como banheiros, quartos, salas e escritórios. Disponíveis: Aquamarine, Chá Branco, Flores Campestres, Lavanda, Talco Baby e Verbena!"
+            - generic [ref=f2e1979]:
+              - generic [ref=f2e1980]: R$ 12,47
+              - button "Adicionar" [ref=f2e1981]
+        - article [ref=f2e1984] [cursor=pointer]:
+          - generic [ref=f2e1985]:
+            - img "Poderoso Limpa Tudo" [ref=f2e1986]
+            - generic [ref=f2e1987]: Limpeza e Higiene
+          - generic [ref=f2e1988]:
+            - heading "Poderoso Limpa Tudo" [level=3] [ref=f2e1989]
+            - paragraph [ref=f2e1990]: Espuma poderosa desenvolvida para a limpeza automotiva e doméstica em locais como partes internas do veículo, sofás, cortinas, carpetes, tecidos em geral, computadores, fórmicas, vinil, plástico, borrachas, tênis, sapatos, sandálias, bolsas, mochilas e couro.
+            - generic [ref=f2e1991]:
+              - generic [ref=f2e1992]: A combinar
+              - button "Adicionar" [ref=f2e1993]
+        - article [ref=f2e1996] [cursor=pointer]:
+          - generic [ref=f2e1997]:
+            - img "Poderoso Brilha Inox" [ref=f2e1998]
+            - generic [ref=f2e1999]: Limpeza e Higiene
+          - generic [ref=f2e2000]:
+            - heading "Poderoso Brilha Inox" [level=3] [ref=f2e2001]
+            - paragraph [ref=f2e2002]: "Produto desenvolvido para uso diário na limpeza de superfícies e utensílios de inox, alumínio, peças esmaltadas e plásticos, formando uma camada de proteção contra oxidação facilitando a limpeza e a manutenção. Pode ser aplicado em: elevadores, geladeiras, fogões, bandejas, churrasqueiras, corrimões, mesas, etc."
+            - generic [ref=f2e2003]:
+              - generic [ref=f2e2004]: R$ 19,90
+              - button "Adicionar" [ref=f2e2005]
+        - article [ref=f2e2008] [cursor=pointer]:
+          - generic [ref=f2e2009]:
+            - img "Poderoso Limpa Forno" [ref=f2e2010]
+            - generic [ref=f2e2011]: Limpeza e Higiene
+          - generic [ref=f2e2012]:
+            - heading "Poderoso Limpa Forno" [level=3] [ref=f2e2013]
+            - paragraph [ref=f2e2014]: Facilita limpeza de fornos, assadores, coifas, grills, espetos, louças e demais utensílios de cozinha em forma de espuma. Não contém soda cáustica.
+            - generic [ref=f2e2015]:
+              - generic [ref=f2e2016]: A combinar
+              - button "Adicionar" [ref=f2e2017]
+        - article [ref=f2e2020] [cursor=pointer]:
+          - generic [ref=f2e2021]:
+            - img "Skin Espuma de Barbear" [ref=f2e2022]
+            - generic [ref=f2e2023]: Limpeza e Higiene
+          - generic [ref=f2e2024]:
+            - heading "Skin Espuma de Barbear" [level=3] [ref=f2e2025]
+            - paragraph [ref=f2e2026]: SKIN – ESPUMA DE BARBEAR é uma espuma hidratante, com perfume neutro que prepara a sua pele, para um barbear suave com um deslizamento incrível.
+            - generic [ref=f2e2027]:
+              - generic [ref=f2e2028]: A combinar
+              - button "Adicionar" [ref=f2e2029]
+        - article [ref=f2e2032] [cursor=pointer]:
+          - generic [ref=f2e2033]:
+            - img "Perfume Pé Deo Pédico" [ref=f2e2034]
+            - generic [ref=f2e2035]: Limpeza e Higiene
+          - generic [ref=f2e2036]:
+            - heading "Perfume Pé Deo Pédico" [level=3] [ref=f2e2037]
+            - paragraph [ref=f2e2038]: Usado para manter os pés secos e perfumados. Agite bem a embalagem, aplique uma quantidade uniforme do Perfume Pé da Sortie entre os dedos previamente secos duas vezes ao dia, de preferência após o banho. Aumente a proteção usando o produto no calçado.
+            - generic [ref=f2e2039]:
+              - generic [ref=f2e2040]: A combinar
+              - button "Adicionar" [ref=f2e2041]
+        - article [ref=f2e2044] [cursor=pointer]:
+          - generic [ref=f2e2045]:
+            - img "Shampoo e condicionar neutro" [ref=f2e2046]
+            - generic [ref=f2e2047]: Pets
+          - generic [ref=f2e2048]:
+            - heading "Shampoo e condicionar neutro" [level=3] [ref=f2e2049]
+            - paragraph [ref=f2e2050]: "Indicação: Indicado para banho e higiene de cães e gatos, oferecendo uma melhor escovação da pelagem."
+            - generic [ref=f2e2051]:
+              - generic [ref=f2e2052]: R$ 16,50
+              - button "Adicionar" [ref=f2e2053]
+        - article [ref=f2e2056] [cursor=pointer]:
+          - generic [ref=f2e2057]:
+            - img "Shampoo e condicionar filhotes" [ref=f2e2058]
+            - generic [ref=f2e2059]: Pets
+          - generic [ref=f2e2060]:
+            - heading "Shampoo e condicionar filhotes" [level=3] [ref=f2e2061]
+            - paragraph [ref=f2e2062]: "Indicação: Indicado para banho e higiene de filhotes de cães e gatos."
+            - generic [ref=f2e2063]:
+              - generic [ref=f2e2064]: R$ 16,50
+              - button "Adicionar" [ref=f2e2065]
+        - article [ref=f2e2068] [cursor=pointer]:
+          - generic [ref=f2e2069]:
+            - img "Shampoo e condicionar clareador" [ref=f2e2070]
+            - generic [ref=f2e2071]: Pets
+          - generic [ref=f2e2072]:
+            - heading "Shampoo e condicionar clareador" [level=3] [ref=f2e2073]
+            - paragraph [ref=f2e2074]: "Indicação: Contém branqueador óptico que destaca as cores claras sem prejudicar as cores escuras de cães e gatos."
+            - generic [ref=f2e2075]:
+              - generic [ref=f2e2076]: R$ 16,50
+              - button "Adicionar" [ref=f2e2077]
+        - article [ref=f2e2080] [cursor=pointer]:
+          - generic [ref=f2e2081]:
+            - img "Shampoo e condicionar, Normal e 6 em 1" [ref=f2e2082]
+            - generic [ref=f2e2083]: Pets
+          - generic [ref=f2e2084]:
+            - heading "Shampoo e condicionar, Normal e 6 em 1" [level=3] [ref=f2e2085]
+            - paragraph [ref=f2e2086]: "O Shampoo 6 em 1 é indicado para: Tratamento e prevenção de parasitas como pulgas, carrapatos, sarnas e piolhos em cães, gatos e equinos."
+            - generic [ref=f2e2087]:
+              - generic [ref=f2e2088]: A combinar
+              - button "Adicionar" [ref=f2e2089]
+        - article [ref=f2e2092] [cursor=pointer]:
+          - generic [ref=f2e2093]:
+            - img "Shampoo & Condicionador Clorexidina 5 em 1" [ref=f2e2094]
+            - generic [ref=f2e2095]: Pets
+          - generic [ref=f2e2096]:
+            - heading "Shampoo & Condicionador Clorexidina 5 em 1" [level=3] [ref=f2e2097]
+            - paragraph [ref=f2e2098]: "Indicação de uso: Carrapato, Piolho, Pulga"
+            - generic [ref=f2e2099]:
+              - generic [ref=f2e2100]: A combinar
+              - button "Adicionar" [ref=f2e2101]
+        - article [ref=f2e2104] [cursor=pointer]:
+          - generic [ref=f2e2105]:
+            - img "Afasta Pet" [ref=f2e2106]
+            - generic [ref=f2e2107]: Controle de Pragas
+          - generic [ref=f2e2108]:
+            - heading "Afasta Pet" [level=3] [ref=f2e2109]
+            - paragraph [ref=f2e2110]: É um educador de cães e gatos desenvolvido para condicionar seu animal a manter distância dos locais, ambientes e objetos desejados. Pode ser aplicado com segurança em áreas internas e externas sem causar danos ao homem e aos animais.
+            - generic [ref=f2e2111]:
+              - generic [ref=f2e2112]: R$ 20,39
+              - button "Adicionar" [ref=f2e2113]
+        - article [ref=f2e2116] [cursor=pointer]:
+          - generic [ref=f2e2117]:
+            - img "Afasta Pet Pipi Não Pode" [ref=f2e2118]
+            - generic [ref=f2e2119]: Controle de Pragas
+          - generic [ref=f2e2120]:
+            - heading "Afasta Pet Pipi Não Pode" [level=3] [ref=f2e2121]
+            - paragraph [ref=f2e2122]: É indicado como educador de cães e gatos desenvolvido para condicionar seu animal a manter distância dos locais, ambientes e objetos desejados.
+            - generic [ref=f2e2123]:
+              - generic [ref=f2e2124]: R$ 11,19
+              - button "Adicionar" [ref=f2e2125]
+        - article [ref=f2e2128] [cursor=pointer]:
+          - generic [ref=f2e2129]:
+            - img "Afasta Pet Pipi Pode" [ref=f2e2130]
+            - generic [ref=f2e2131]: Controle de Pragas
+          - generic [ref=f2e2132]:
+            - heading "Afasta Pet Pipi Pode" [level=3] [ref=f2e2133]
+            - paragraph [ref=f2e2134]: É indicado como auxiliar no adestramento sanitário de cães/gatos, com consequente proteção de tapetes, estofados, canteiros e outros lugares indevidos visados pelos animais para micção.
+            - generic [ref=f2e2135]:
+              - generic [ref=f2e2136]: R$ 10,39
+              - button "Adicionar" [ref=f2e2137]
+        - article [ref=f2e2140] [cursor=pointer]:
+          - generic [ref=f2e2141]:
+            - img "Afasta Pet Educador de Mordida" [ref=f2e2142]
+            - generic [ref=f2e2143]: Controle de Pragas
+          - generic [ref=f2e2144]:
+            - heading "Afasta Pet Educador de Mordida" [level=3] [ref=f2e2145]
+            - paragraph [ref=f2e2146]: É indicado para cães e gatos. Ajuda a proteger objetos e móveis que os animais possam lamber, mastigar ou morder destrutivamente como sapatos, móveis, tapetes, cortinas, bandagens, etc.
+            - generic [ref=f2e2147]:
+              - generic [ref=f2e2148]: R$ 8,79
+              - button "Adicionar" [ref=f2e2149]
+        - article [ref=f2e2152] [cursor=pointer]:
+          - generic [ref=f2e2153]:
+            - img "Cupinicida Zodrin" [ref=f2e2154]
+            - generic [ref=f2e2155]: Controle de Pragas
+          - generic [ref=f2e2156]:
+            - heading "Cupinicida Zodrin" [level=3] [ref=f2e2157]
+            - paragraph [ref=f2e2158]: Eficaz contra cupins, baratas e formigas. Efetuar a aplicação por pulverização do cupinicida zodrin pronto para uso em residências, edifícios, industrias, galpões, escritórios e dependências comerciais onde os insetos normalmente são encontrados.
+            - generic [ref=f2e2159]:
+              - generic [ref=f2e2160]: A combinar
+              - button "Adicionar" [ref=f2e2161]
+        - article [ref=f2e2164] [cursor=pointer]:
+          - generic [ref=f2e2165]:
+            - img "Alpha Ciper - Ovinos, cães, aves, bovinos, ambientes, instalações" [ref=f2e2166]
+            - generic [ref=f2e2167]: Controle de Pragas
+          - generic [ref=f2e2168]:
+            - heading "Alpha Ciper - Ovinos, cães, aves, bovinos, ambientes, instalações" [level=3] [ref=f2e2169]
+            - paragraph [ref=f2e2170]: e equipamentos. Auxilia no combate de carrapatos, pulgas, piolhos, moscas, sarnas e bernes.
+            - generic [ref=f2e2171]:
+              - generic [ref=f2e2172]: A combinar
+              - button "Adicionar" [ref=f2e2173]
+        - article [ref=f2e2176] [cursor=pointer]:
+          - generic [ref=f2e2177]:
+            - img "Kellmat Sementes de Cereais" [ref=f2e2178]
+            - generic [ref=f2e2179]: Controle de Pragas
+          - generic [ref=f2e2180]:
+            - heading "Kellmat Sementes de Cereais" [level=3] [ref=f2e2181]
+            - paragraph [ref=f2e2182]: É indicado para o combate a ratos, ratazanas e camundongos em áreas internas e externas.
+            - generic [ref=f2e2183]:
+              - generic [ref=f2e2184]: R$ 42,00
+              - button "Adicionar" [ref=f2e2185]
+        - article [ref=f2e2188] [cursor=pointer]:
+          - generic [ref=f2e2189]:
+            - img "Kellmat Raticida Granulado" [ref=f2e2190]
+            - generic [ref=f2e2191]: Controle de Pragas
+          - generic [ref=f2e2192]:
+            - heading "Kellmat Raticida Granulado" [level=3] [ref=f2e2193]
+            - paragraph [ref=f2e2194]: Indicado para o combate a ratos, ratazanas e camundongo em áreas internas e externas.
+            - generic [ref=f2e2195]:
+              - generic [ref=f2e2196]: R$ 1,99
+              - button "Adicionar" [ref=f2e2197]
+        - article [ref=f2e2200] [cursor=pointer]:
+          - generic [ref=f2e2201]:
+            - img "Poderoso Cola Mosca" [ref=f2e2202]
+            - generic [ref=f2e2203]: Controle de Pragas
+          - generic [ref=f2e2204]:
+            - heading "Poderoso Cola Mosca" [level=3] [ref=f2e2205]
+            - paragraph [ref=f2e2206]: Cartela cola mosca é uma armadilha não tóxica indicada para exterminar moscas, em locais onde venenos podem ser perigosos, como cozinhas, depósitos de alimentos, hospitais, escolas, indústrias, restaurantes, próximo a currasqueiras, plantações etc. Kellmat Cola Rato. Examinar a área e identificar os locais de passagem do roedor. Abrir lentamente. Colocar na passagem do roedor como rodapés e cantos de parede. Se preferir, fixar o Kellmat ratoeira adesiva no local escolhido. Para melhores resultados, colocar um atrativo como isca no centro da armadilha. Verificar diariamente se não houver captura após 2 dias, mudar a armadilha de lugar.
+            - generic [ref=f2e2207]:
+              - generic [ref=f2e2208]: A combinar
+              - button "Adicionar" [ref=f2e2209]
+        - article [ref=f2e2212] [cursor=pointer]:
+          - generic [ref=f2e2213]:
+            - img "Poderoso Pronto Uso" [ref=f2e2214]
+            - generic [ref=f2e2215]: Controle de Pragas
+          - generic [ref=f2e2216]:
+            - heading "Poderoso Pronto Uso" [level=3] [ref=f2e2217]
+            - paragraph [ref=f2e2218]: Eficaz no combate a cupins, baratas e formigas. Efetuar a aplicação por pulverização do poderoso pronto para uso em residências, edifícios industriais, galpões, escritórios e dependências comerciais onde os insetos normalmente são encontrados.
+            - generic [ref=f2e2219]:
+              - generic [ref=f2e2220]: A combinar
+              - button "Adicionar" [ref=f2e2221]
+        - article [ref=f2e2224] [cursor=pointer]:
+          - generic [ref=f2e2225]:
+            - img "Poderoso Mosquicida Granulado" [ref=f2e2226]
+            - generic [ref=f2e2227]: Controle de Pragas
+          - generic [ref=f2e2228]:
+            - heading "Poderoso Mosquicida Granulado" [level=3] [ref=f2e2229]
+            - paragraph [ref=f2e2230]: Inseticida com atrativo sexual, eficaz contra moscas.
+            - generic [ref=f2e2231]:
+              - generic [ref=f2e2232]: A combinar
+              - button "Adicionar" [ref=f2e2233]
+        - article [ref=f2e2236] [cursor=pointer]:
+          - generic [ref=f2e2237]:
+            - img "Kelldrin SC25" [ref=f2e2238]
+            - generic [ref=f2e2239]: Controle de Pragas
+          - generic [ref=f2e2240]:
+            - heading "Kelldrin SC25" [level=3] [ref=f2e2241]
+            - paragraph [ref=f2e2242]: "Indicação de uso: Aranha, Barata, Carrapato, Cupim, Escorpião, Formiga, Lagartas, Pulga, Pulgão, Traça"
+            - generic [ref=f2e2243]:
+              - generic [ref=f2e2244]: A combinar
+              - button "Adicionar" [ref=f2e2245]
+        - article [ref=f2e2248] [cursor=pointer]:
+          - generic [ref=f2e2249]:
+            - img "Poderoso VET 30ml" [ref=f2e2250]
+            - generic [ref=f2e2251]: Controle de Pragas
+          - generic [ref=f2e2252]:
+            - heading "Poderoso VET 30ml" [level=3] [ref=f2e2253]
+            - paragraph [ref=f2e2254]: Indicado para cães e gatos, adultos e filhotes (a partir de 15 dias de vida). Tratamento e controle de infestações por pulgas, piolhos, carrapatos e sarna sarcóptica. O inseticida é indicado também para o controle de cupins, formigas, baratas e escorpiões no ambiente. (Fipronil 2,5% e Piriproxifen 2,5%)
+            - generic [ref=f2e2255]:
+              - generic [ref=f2e2256]: R$ 12,00
+              - button "Adicionar" [ref=f2e2257]
+        - article [ref=f2e2260] [cursor=pointer]:
+          - generic [ref=f2e2261]:
+            - img "Kellthine Mata Cupim" [ref=f2e2262]
+            - generic [ref=f2e2263]: Controle de Pragas
+          - generic [ref=f2e2264]:
+            - heading "Kellthine Mata Cupim" [level=3] [ref=f2e2265]
+            - paragraph [ref=f2e2266]: Combate de cupins em peças de madeira.
+            - generic [ref=f2e2267]:
+              - generic [ref=f2e2268]: A combinar
+              - button "Adicionar" [ref=f2e2269]
+    - generic [ref=f2e2273]:
+      - img "Ilustração com produtos variados da Distribuidora Águia" [ref=f2e2275]
+      - generic [ref=f2e2276]:
+        - generic [ref=f2e2277]: Sobre nós
+        - heading "A tradição do sabor, do nosso jeito." [level=2] [ref=f2e2278]
+        - paragraph [ref=f2e2279]:
+          - text: A
+          - strong [ref=f2e2280]: Distribuidora Águia
+          - text: trabalha para levar tradição, qualidade e variedade até você. Cada produto é escolhido com cuidado, para que sua loja, festa ou lanche da tarde tenha sempre o melhor sabor.
+        - list [ref=f2e2281]:
+          - listitem [ref=f2e2282]:
+            - strong [ref=f2e2283]: "História:"
+            - text: "[TEXTO SOBRE A HISTÓRIA DA EMPRESA]"
+          - listitem [ref=f2e2284]:
+            - strong [ref=f2e2285]: "Missão:"
+            - text: Levar sabor e praticidade para Picos e região.
+    - generic [ref=f2e2287]:
+      - generic [ref=f2e2288]:
+        - heading "Fale com a gente" [level=2] [ref=f2e2289]
+        - paragraph [ref=f2e2290]: Dúvidas, encomendas e orçamentos são resolvidos rapidinho pelo WhatsApp.
+      - generic [ref=f2e2291]:
+        - link [ref=f2e2292] [cursor=pointer]:
+          - /url: https://wa.me/5589981425420
+          - generic [ref=f2e2296]:
+            - heading "WhatsApp" [level=3] [ref=f2e2297]
+            - paragraph [ref=f2e2298]: "5589981425420"
+        - link [ref=f2e2299] [cursor=pointer]:
+          - /url: https://instagram.com/vtrzin.sz
+          - generic [ref=f2e2305]:
+            - heading "Instagram" [level=3] [ref=f2e2306]
+            - paragraph [ref=f2e2307]: "@vtrzin.sz"
+        - generic [ref=f2e2313]:
+          - heading "Endereço" [level=3] [ref=f2e2314]
+          - paragraph [ref=f2e2315]: Av. Severo Eulálio, Picos - PI
+        - generic [ref=f2e2321]:
+          - heading "Horário de funcionamento" [level=3] [ref=f2e2322]
+          - paragraph [ref=f2e2323]: SEG A SEX • 7H ÀS 18H
+      - button "Falar conosco no WhatsApp" [ref=f2e2325] [cursor=pointer]
+  - contentinfo [ref=f2e2326]:
+    - generic [ref=f2e2327]:
+      - generic [ref=f2e2328]:
+        - link [ref=f2e2329] [cursor=pointer]:
+          - /url: "#inicio"
+          - strong [ref=f2e2333]: Distribuidora ÁGUIA
+        - paragraph [ref=f2e2334]: Doces, paçocas, pipocas e variedades para toda a região. Monte seu pedido e envie direto para o nosso WhatsApp.
+      - generic [ref=f2e2335]:
+        - heading "Navegação" [level=3] [ref=f2e2336]
+        - list [ref=f2e2337]:
+          - listitem [ref=f2e2338]:
+            - link "Início" [ref=f2e2339] [cursor=pointer]:
+              - /url: "#inicio"
+          - listitem [ref=f2e2340]:
+            - link "Produtos" [ref=f2e2341] [cursor=pointer]:
+              - /url: "#produtos"
+          - listitem [ref=f2e2342]:
+            - link "Sobre nós" [ref=f2e2343] [cursor=pointer]:
+              - /url: "#sobre"
+          - listitem [ref=f2e2344]:
+            - link "Contato" [ref=f2e2345] [cursor=pointer]:
+              - /url: "#contato"
+      - generic [ref=f2e2346]:
+        - heading "Atendimento" [level=3] [ref=f2e2347]
+        - list [ref=f2e2348]:
+          - listitem [ref=f2e2349]:
+            - generic [ref=f2e2352]:
+              - text: "WhatsApp:"
+              - link "[NÚMERO]" [ref=f2e2353] [cursor=pointer]:
+                - /url: https://wa.me/5589981425420
+          - listitem [ref=f2e2354]:
+            - generic [ref=f2e2359]:
+              - text: "Instagram:"
+              - link "@[INSTAGRAM]" [ref=f2e2360] [cursor=pointer]:
+                - /url: https://instagram.com/vtrzin.sz
+          - listitem [ref=f2e2361]:
+            - generic [ref=f2e2365]: "[ENDEREÇO] — Picos · PI"
+          - listitem [ref=f2e2366]:
+            - generic [ref=f2e2370]: "[HORÁRIO]"
+    - generic [ref=f2e2371]:
+      - paragraph [ref=f2e2372]: © 2026 Distribuidora Águia — Todos os direitos reservados.
+      - paragraph [ref=f2e2373]: Pedidos e atendimento realizados diretamente pelo WhatsApp. Este site não processa pagamentos.
+  - complementary [aria-hidden] [ref=f2e2374]:
+    - generic [ref=f2e2375]:
+      - heading [level=2] [ref=f2e2376]: Meu pedido
+      - button [ref=f2e2381] [cursor=pointer]
+    - generic [aria-hidden] [ref=f2e2384]:
+      - generic [ref=f2e2385]:
+        - generic [ref=f2e2386]: "1"
+        - generic [ref=f2e2387]: Produtos
+      - generic [ref=f2e2388]:
+        - generic [ref=f2e2389]: "2"
+        - generic [ref=f2e2390]: Entrega
+      - generic [ref=f2e2391]:
+        - generic [ref=f2e2392]: "3"
+        - generic [ref=f2e2393]: Dados
+      - generic [ref=f2e2394]:
+        - generic [ref=f2e2395]: "4"
+        - generic [ref=f2e2396]: Envio
+    - generic [ref=f2e2397]:
+      - generic [ref=f2e2398]:
+        - button [ref=f2e2399] [cursor=pointer]: Limpar pedido
+        - generic [ref=f2e2403]:
+          - heading [level=3] [ref=f2e2409]: Seu pedido está vazio.
+          - paragraph [ref=f2e2410]: Escolha nossos produtos e monte seu pedido.
+          - button [ref=f2e2411] [cursor=pointer]: Ver produtos
+        - generic [ref=f2e2412]:
+          - generic [ref=f2e2413]:
+            - generic [ref=f2e2414]: Subtotal
+            - generic [ref=f2e2415]: A combinar
+          - generic [ref=f2e2416]:
+            - generic [ref=f2e2417]: Taxa de entrega
+            - generic [ref=f2e2418]: R$ 0,00
+          - generic [ref=f2e2419]:
+            - generic [ref=f2e2420]: Total estimado
+            - generic [ref=f2e2421]: A combinar
+          - paragraph [ref=f2e2422]: O valor é uma estimativa. Confirmação, disponibilidade e entrega são tratados pela distribuidora no WhatsApp.
+      - paragraph [ref=f2e2423]
+  - status [ref=f2e2424]

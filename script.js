@@ -661,15 +661,15 @@ function renderizarProdutos() {
         card.dataset.id = produto.id; // guarda o id no card (usado nos cliques)
         card.style.animationDelay = Math.min(indice * 0.04, 0.4) + "s"; // animação em cascata
 
-        // Monta o HTML interno do card (imagem + nome + descrição + preço + botão)
+        // Monta o HTML interno do card (imagem + tag + nome + descrição + preço + botão)
         card.innerHTML =
             '<div class="produto-imagem">' +
                 '<img src="' + produto.imagem + '" alt="' + produto.nome +
                 '" loading="lazy">' + /* loading=lazy: imagem carrega só quando aparece na tela */
-                (produto.disponivel ? "" : '<div class="aviso-indisponivel">INDISPONÍVEL</div>') +
+                '<span class="produto-tag">' + produto.categoria + "</span>" +
+                (produto.disponivel ? "" : '<div class="aviso-indisponivel">Indisponível</div>') +
             "</div>" +
             '<div class="produto-info">' +
-                '<span class="categoria-label">' + produto.categoria + "</span>" +
                 "<h3>" + produto.nome + "</h3>" +
                 "<p>" + produto.descricao + "</p>" +
                 '<div class="produto-rodape">' +
@@ -677,7 +677,7 @@ function renderizarProdutos() {
                     '<button type="button" class="btn-adicionar" ' +
                         (produto.disponivel ? "" : "disabled") + ">" +
                         (produto.disponivel
-                            ? icone(ICONES.mais, 15) + "Adicionar ao pedido"
+                            ? icone(ICONES.mais, 15) + "Adicionar"
                             : "Indisponível") +
                     "</button>" +
                 "</div>";
