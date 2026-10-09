@@ -34,10 +34,10 @@ const CONFIG = {
     whatsappFornecedor: "5589981425420",
 
     // Redes sociais e localização
-    instagram: "https://instagram.com/SEU_INSTAGRAM",
+    instagram: "https://instagram.com/vtrzin.sz",
     cidade: "Picos",
     estado: "PI",
-    endereco: "[ENDEREÇO], Picos - PI",
+    endereco: "Av. Severo Eulálio, Picos - PI",
 
     // Horário de funcionamento
     horario: "SEG A SEX • 7H ÀS 18H"
@@ -78,26 +78,185 @@ const taxasEntrega = {}; // vazio = sem taxa por bairro
    ========================================================================== */
 
 const produtos = [
-    { id: 1, nome: "Paçoca Artesanal Tradicional", descricao: "Paçoca de amendoim feita na receita tradicional. Pacote 200g.", preco: 6.50, categoria: "Paçocas", imagem: "assets/images/pacoca-tradicional.svg", disponivel: true },
-    { id: 2, nome: "Paçoca Rolha", descricao: "A clássica paçoca em formato de rolha, perfeita para revenda. Embalagem 500g.", preco: 14.90, categoria: "Paçocas", imagem: "assets/images/pacoca-rolha.svg", disponivel: true },
-    { id: 3, nome: "Paçoca de Coco", descricao: "Paçoca com toque de coco, para quem ama o sabor do Nordeste. 150g.", preco: 8.90, categoria: "Paçocas", imagem: "assets/images/pacoca-coco.svg", disponivel: true },
-    { id: 4, nome: "Pote de Paçoca Cremosa", descricao: "Paçoca cremosa em pote, irresistível de colher. 300g.", preco: 10.90, categoria: "Paçocas", imagem: "assets/images/pacoca-cremosa.svg", disponivel: true },
-    { id: 5, nome: "Pipoca Doce Caramelizada", descricao: "Pipoca doce crocante com cobertura de caramelo. Pacote 300g.", preco: 5.90, categoria: "Pipocas", imagem: "assets/images/pipoca-doce.svg", disponivel: true },
-    { id: 6, nome: "Pipoca Salgada de Manteiga", descricao: "Pipoca salgada no ponto certo, com um toque de manteiga. Pacote 300g.", preco: 5.90, categoria: "Pipocas", imagem: "assets/images/pipoca-salgada.svg", disponivel: true },
-    { id: 7, nome: "Milho de Pipoca", descricao: "Milho de pipoca de ótima qualidade para fazer em casa. Pacote 500g.", preco: 4.50, categoria: "Pipocas", imagem: "assets/images/milho-pipoca.svg", disponivel: true },
-    { id: 8, nome: "Doce de Leite Cremoso", descricao: "Doce de leite cremoso, ideal para recheios e sobremesas. Pote 250g.", preco: 9.90, categoria: "Doces", imagem: "assets/images/doce-de-leite.svg", disponivel: true },
-    { id: 9, nome: "Pé de Moleque Caseiro", descricao: "Pé de moleque de amendoim, feito com receita caseira. 200g.", preco: 7.90, categoria: "Doces", imagem: "assets/images/pe-de-moleque.svg", disponivel: true },
-    { id: 10, nome: "Rapadura de Cana", descricao: "Rapadura de cana-de-açúcar pura e saborosa. 500g.", preco: 8.50, categoria: "Doces", imagem: "assets/images/rapadura.svg", disponivel: true },
-    { id: 11, nome: "Doce de Caju em Pasta", descricao: "Doce de caju artesanal em pasta, tradição do Piauí. Pote 250g.", preco: 9.90, categoria: "Doces", imagem: "assets/images/doce-de-caju.svg", disponivel: true },
-    { id: 12, nome: "Chocolate ao Leite", descricao: "Barra de chocolate ao leite cremoso, 90g.", preco: 5.90, categoria: "Chocolates", imagem: "assets/images/chocolate-ao-leite.svg", disponivel: true },
-    { id: 13, nome: "Bombom Sortido", descricao: "Caixa de bombons sortidos, ótima para presentear. 450g.", preco: 16.90, categoria: "Chocolates", imagem: "assets/images/bombom-sortido.svg", disponivel: true },
-    { id: 14, nome: "Bala de Coco", descricao: "Balas de coco macias e cheias de sabor. Pacote 400g.", preco: 7.90, categoria: "Balas e Gomas", imagem: "assets/images/bala-de-coco.svg", disponivel: true },
-    { id: 15, nome: "Bala de Caramelo", descricao: "Balas de caramelo cremosinho, o clássico da venda. Pacote 300g.", preco: 6.90, categoria: "Balas e Gomas", imagem: "assets/images/bala-caramelo.svg", disponivel: true },
-    { id: 16, nome: "Salgadinho de Queijo", descricao: "Salgadinho de queijo crocante para o lanche. Pacote 45g.", preco: 3.50, categoria: "Salgadinhos", imagem: "assets/images/salgadinho-queijo.svg", disponivel: true },
-    { id: 17, nome: "Amendoim Torrado Salgado", descricao: "Amendoim torrado e salgado na medida, ótimo para petiscos. 200g.", preco: 4.90, categoria: "Salgadinhos", imagem: "assets/images/amendoim-torrado.svg", disponivel: true },
-    { id: 18, nome: "Amendoim Japonês", descricao: "Amendoim com casquinha crocante e sabor oriental. Pacote 100g.", preco: 3.90, categoria: "Salgadinhos", imagem: "assets/images/amendoim-japones.svg", disponivel: false },
-    { id: 19, nome: "Combo Festa", descricao: "Mix de paçocas, doces e pipocas para festas e eventos. Caixa sortida.", preco: 29.90, categoria: "Combos", imagem: "assets/images/combo-festa.svg", disponivel: true },
-    { id: 20, nome: "Combo Tradicional", descricao: "Seleção de paçocas artesanais da casa. Caixa especial.", preco: 24.90, categoria: "Combos", imagem: "assets/images/combo-tradicional.svg", disponivel: true }
+    { id: 1, nome: "Doce Amor de Minas, Sachê 30g", descricao: "Pct com 1,5kg, aprox. 50 Unid cx/10 pacotes", preco: 60.49, categoria: "Doces Amor de Minas", imagem: "assets/images/obj-894.png", disponivel: true },
+    { id: 2, nome: "Doce Amor de Minas Tablete Tradicional", descricao: "Pote c/20 de 47g cx c/12 Potes", preco: 56.9, categoria: "Doces Amor de Minas", imagem: "assets/images/obj-892.png", disponivel: true },
+    { id: 3, nome: "Doce Amor de Minas Tablete c/coco", descricao: "Pote c/20 de 47g cx c/12 Potes", preco: 56.9, categoria: "Doces Amor de Minas", imagem: "assets/images/obj-893.png", disponivel: true },
+    { id: 4, nome: "Doce de Leite Pastoso, para confeitaria", descricao: "Bisnaga 1kg", preco: 42, categoria: "Doces Amor de Minas", imagem: "assets/images/obj-895.png", disponivel: true },
+    { id: 5, nome: "Moedas sabor Chocolate", descricao: "130 Unidades", preco: 52.75, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-906.png", disponivel: true },
+    { id: 6, nome: "Caixa de Bombons Sortidos", descricao: "180g (20 Unid x 9g cada)", preco: 9.49, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-907.png", disponivel: true },
+    { id: 7, nome: "Moranguete Pote", descricao: "c/50 Unid x 9g cada", preco: 24.5, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-908.png", disponivel: true },
+    { id: 8, nome: "Moranguete Caixa", descricao: "c/100 Unid x 9g cada", preco: 0, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-909.png", disponivel: true },
+    { id: 9, nome: "Tablete Golden Ao Leite", descricao: "460g (20un x 23g)", preco: 28, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-910.png", disponivel: true },
+    { id: 10, nome: "Tablete Golden Ao Leite", descricao: "900g (10un x 90g)", preco: 54, categoria: "Bombons e Chocolates", imagem: "assets/images/obj-911.png", disponivel: true },
+    { id: 11, nome: "Doce Beijo C/ Chocolate", descricao: "Pote c/21und", preco: 58, categoria: "Doces em Pote", imagem: "assets/images/obj-924.png", disponivel: true },
+    { id: 12, nome: "Doce Palha Italiana", descricao: "Pote c/21und", preco: 58, categoria: "Doces em Pote", imagem: "assets/images/obj-925.png", disponivel: true },
+    { id: 13, nome: "Doce de Brigadeiro", descricao: "Pote c/21und", preco: 58, categoria: "Doces em Pote", imagem: "assets/images/obj-927.png", disponivel: true },
+    { id: 14, nome: "Doce Pé de Moça", descricao: "Pote c/21und", preco: 58, categoria: "Doces em Pote", imagem: "assets/images/obj-926.png", disponivel: true },
+    { id: 15, nome: "Doce de Leite Pingo Bel", descricao: "Pote c/21und", preco: 58, categoria: "Doces em Pote", imagem: "assets/images/obj-923.png", disponivel: true },
+    { id: 16, nome: "Amend. Jap. Bacon 24g", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 5.5, categoria: "Amendoim Japonês", imagem: "assets/images/obj-938.png", disponivel: true },
+    { id: 17, nome: "Amend. Jap. Trad. 24g", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 5.5, categoria: "Amendoim Japonês", imagem: "assets/images/obj-939.png", disponivel: true },
+    { id: 18, nome: "Amend. S/ Pele. 24g Und", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 3, categoria: "Amendoim Japonês", imagem: "assets/images/obj-942.png", disponivel: true },
+    { id: 19, nome: "Amend. Jap. Ceb. E Salsa. 24g", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 5.5, categoria: "Amendoim Japonês", imagem: "assets/images/obj-940.png", disponivel: true },
+    { id: 20, nome: "Amend. Jap. Pimenta Mex. 24g", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 5.5, categoria: "Amendoim Japonês", imagem: "assets/images/obj-941.png", disponivel: true },
+    { id: 21, nome: "Amend. Jap. Colorido. 24g", descricao: "Cartela com 5 unid Cx com 14 tiras", preco: 5.5, categoria: "Amendoim Japonês", imagem: "assets/images/obj-943.png", disponivel: true },
+    { id: 22, nome: "Amend. Jap. 60g Und", descricao: "cx/30 und", preco: 2.85, categoria: "Amendoins", imagem: "assets/images/obj-954.png", disponivel: true },
+    { id: 23, nome: "Amend. S/Pele 60g", descricao: "cx/30 und", preco: 2.85, categoria: "Amendoins", imagem: "assets/images/obj-955.png", disponivel: true },
+    { id: 24, nome: "Pé de Moleque Pote 25 und", descricao: "cx/6 potes", preco: 40, categoria: "Amendoins", imagem: "assets/images/obj-956.png", disponivel: true },
+    { id: 25, nome: "Caseirão Pote 25 und", descricao: "cx/6 potes", preco: 40, categoria: "Amendoins", imagem: "assets/images/obj-957.png", disponivel: true },
+    { id: 26, nome: "Molecão Pote 25 und", descricao: "cx/6 potes", preco: 40, categoria: "Amendoins", imagem: "assets/images/obj-958.png", disponivel: true },
+    { id: 27, nome: "Paçoca Rolha Cx. C/ 100", descricao: "", preco: 39, categoria: "Paçocas e Cocadas", imagem: "assets/images/obj-971.png", disponivel: true },
+    { id: 28, nome: "Paçoca Rolha Pote C/ 50", descricao: "cx com 6", preco: 22.5, categoria: "Paçocas e Cocadas", imagem: "assets/images/obj-972.png", disponivel: true },
+    { id: 29, nome: "Paçoca No Espeto c/ 35 und", descricao: "cx c/ 2", preco: 75, categoria: "Paçocas e Cocadas", imagem: "assets/images/obj-976.png", disponivel: true },
+    { id: 30, nome: "Cocada Recheada Cremosa", descricao: "Display c/ 15 und. 42g cada", preco: 27, categoria: "Paçocas e Cocadas", imagem: "assets/images/obj-977.png", disponivel: true },
+    { id: 31, nome: "Bala Café 500g", descricao: "Pacote. C/ 100 unid", preco: 16, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-985.png", disponivel: true },
+    { id: 32, nome: "Bala Mel 500g", descricao: "Pacote. C/ 100 unid", preco: 16, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-987.png", disponivel: true },
+    { id: 33, nome: "Bala Pipper Hortelão", descricao: "500g Pacote. C/ 100 unid", preco: 14.8, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-984.png", disponivel: true },
+    { id: 34, nome: "Bala Sambol", descricao: "500g Pacote. C/ 100 unid", preco: 16, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-986.png", disponivel: true },
+    { id: 35, nome: "Pirulito Drop Pop", descricao: "pct c/50 unid", preco: 9, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-989.png", disponivel: true },
+    { id: 36, nome: "Pirulito Samito", descricao: "pct c/50 unid", preco: 9, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-991.png", disponivel: true },
+    { id: 37, nome: "Pirulito Lampião", descricao: "pct c/50 unid", preco: 0, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-990.png", disponivel: true },
+    { id: 38, nome: "Lampião Maracujá", descricao: "pct c/50 unid", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-990.png", disponivel: true },
+    { id: 39, nome: "Pop Mix", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-995.png", disponivel: true },
+    { id: 40, nome: "Pop Morango", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-996.png", disponivel: true },
+    { id: 41, nome: "Pop Black", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-994.png", disponivel: true },
+    { id: 42, nome: "Pop Cereja", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-993.png", disponivel: true },
+    { id: 43, nome: "Pop Tutti", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-997.png", disponivel: true },
+    { id: 44, nome: "Pop Energy", descricao: "Pct c/50", preco: 20.5, categoria: "Balas e Pirulitos", imagem: "assets/images/obj-998.png", disponivel: true },
+    { id: 45, nome: "Barra de Cereal Trio Avelã Castanha e", descricao: "Chocolate Display c/12 unid", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1008.png", disponivel: true },
+    { id: 46, nome: "Barra de Cereal Trio Banana Aveia e", descricao: "Mel Display c/12 unid", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1009.png", disponivel: true },
+    { id: 47, nome: "Barra de Cereal Trio Brigadeiro", descricao: "Display c/12 unid", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1010.png", disponivel: true },
+    { id: 48, nome: "Barra de Cereal Trio Zero Banana e", descricao: "Mel Display c/12 unid", preco: 32, categoria: "Barras de Cereal", imagem: "assets/images/obj-1013.png", disponivel: true },
+    { id: 49, nome: "Barra de Cereal Trio Morango c/ Chocolate", descricao: "Display c/12 unid", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1012.png", disponivel: true },
+    { id: 50, nome: "Barra de Cereal Trio Coco com", descricao: "Chocolate Display c/12 unid", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1011.png", disponivel: true },
+    { id: 51, nome: "Barra de Cereal Zero açucar", descricao: "Display 12 und", preco: 28, categoria: "Barras de Cereal", imagem: "assets/images/obj-1024.png", disponivel: true },
+    { id: 52, nome: "Barra de Cereal Amendoim", descricao: "Display 12 und", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1026.png", disponivel: true },
+    { id: 53, nome: "Barra de Cereal Banana e Mel", descricao: "Display 12 und", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1027.png", disponivel: true },
+    { id: 54, nome: "Barra de Cereal Bolo de Chocolate", descricao: "Display c/ 12 unid", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1025.png", disponivel: true },
+    { id: 55, nome: "Barra de Cereal Frutas", descricao: "Display c/12 unid", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1030.png", disponivel: true },
+    { id: 56, nome: "Barra de Cereal Morango e Chocolate", descricao: "Display c/12 unid", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1029.png", disponivel: true },
+    { id: 57, nome: "Barra de Cereal Castanha com Chocolate", descricao: "Display c/12 unid", preco: 24, categoria: "Barras de Cereal", imagem: "assets/images/obj-1028.png", disponivel: true },
+    { id: 58, nome: "Banana tradicional Zero Açucar", descricao: "Display 24 und", preco: 65, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1047.png", disponivel: true },
+    { id: 59, nome: "Banana com chocolate e Café", descricao: "Display 24 und", preco: 65, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1046.png", disponivel: true },
+    { id: 60, nome: "Banana Com chocolate", descricao: "Display 24 und", preco: 65, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1045.png", disponivel: true },
+    { id: 61, nome: "Banana com abacaxi", descricao: "Display 12 und", preco: 38, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1049.png", disponivel: true },
+    { id: 62, nome: "Banana com chia e linhaça", descricao: "Display 24 und", preco: 65, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1048.png", disponivel: true },
+    { id: 63, nome: "Bananikas tradicional, Goiabikas e", descricao: "Banana com chocolate Pacote C/50 Unid", preco: 43, categoria: "Bananas e Frutas", imagem: "assets/images/obj-1921.png", disponivel: true },
+    { id: 64, nome: "Paçoca Diet c/ Aveia 480g", descricao: "", preco: 46, categoria: "Méis e Derivados", imagem: "assets/images/obj-1059.png", disponivel: true },
+    { id: 65, nome: "Mel em Sache 1kg - 250 Unid", descricao: "", preco: 59.9, categoria: "Méis e Derivados", imagem: "assets/images/obj-1940.png", disponivel: true },
+    { id: 66, nome: "Mel Orgânico", descricao: "Tamanhos: 200g ; 320g ; 500g", preco: 19.5, categoria: "Méis e Derivados", imagem: "assets/images/obj-1935.png", disponivel: true },
+    { id: 67, nome: "Extrato de Própolis Marron", descricao: "", preco: 11, categoria: "Méis e Derivados", imagem: "assets/images/obj-1066.png", disponivel: true },
+    { id: 68, nome: "Extrato de Própolis Verde", descricao: "", preco: 13, categoria: "Méis e Derivados", imagem: "assets/images/obj-1065.png", disponivel: true },
+    { id: 69, nome: "Mel 100% Natural e Orgânico", descricao: "Bisnaga 270g", preco: 18.9, categoria: "Méis e Derivados", imagem: "assets/images/obj-1080.png", disponivel: true },
+    { id: 70, nome: "Mel 100% Natural e Orgânico", descricao: "Bisnaga 470g", preco: 0, categoria: "Méis e Derivados", imagem: "assets/images/obj-1079.png", disponivel: true },
+    { id: 71, nome: "Mel 100% Natural e Orgânico", descricao: "Bisnaga de vidro 720g", preco: 36.6, categoria: "Méis e Derivados", imagem: "assets/images/obj-1078.png", disponivel: true },
+    { id: 72, nome: "Mel 100% Natural e Orgânico", descricao: "Sachê Pacote de 100g", preco: 10.49, categoria: "Méis e Derivados", imagem: "assets/images/obj-1077.png", disponivel: true },
+    { id: 73, nome: "Mel 100% Natural e Orgânico", descricao: "Sachê Pacote de 200g", preco: 0, categoria: "Méis e Derivados", imagem: "assets/images/obj-1077.png", disponivel: true },
+    { id: 74, nome: "Doce de Leite Tradicional Pote", descricao: "Vidro 410g cx c/24", preco: 26.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1089.png", disponivel: true },
+    { id: 75, nome: "Doce de Leite c/coco Pote", descricao: "Vidro 400g cx c/24", preco: 26.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1090.png", disponivel: true },
+    { id: 76, nome: "Doce de Leite c/ameixa Pote", descricao: "Vidro 410g cx c/24", preco: 26.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1091.png", disponivel: true },
+    { id: 77, nome: "Doce de Leite c/chocolate Pote", descricao: "Vidro 410g cx c/24", preco: 26.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1092.png", disponivel: true },
+    { id: 78, nome: "Doce de Leite cocada ao leite", descricao: "Vidro 400g cx c/24", preco: 26.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1094.png", disponivel: true },
+    { id: 79, nome: "Doce de Cajú em Calda Pote", descricao: "Vidro 700g cx c/06", preco: 25.99, categoria: "Doce de Leite", imagem: "assets/images/obj-1093.png", disponivel: true },
+    { id: 80, nome: "Doce de Leite zero açucar", descricao: "215g cx c/24 unid", preco: 27.2, categoria: "Doce de Leite", imagem: "assets/images/obj-1111.png", disponivel: true },
+    { id: 81, nome: "Doce de Leite zero lactose", descricao: "215g cx c/24 unid", preco: 20.9, categoria: "Doce de Leite", imagem: "assets/images/obj-1111.png", disponivel: true },
+    { id: 82, nome: "Doce de Leite em tabletes zero açucar", descricao: "Display com 40 unidades de 23g", preco: 152, categoria: "Doce de Leite", imagem: "assets/images/obj-1112.png", disponivel: true },
+    { id: 83, nome: "Creme de Avelã tradicional 140g e 350g", descricao: "", preco: 11.7, categoria: "Doce de Leite", imagem: "assets/images/obj-1113.png", disponivel: true },
+    { id: 84, nome: "Creme de Avelã Crocante 140g", descricao: "", preco: 11.7, categoria: "Doce de Leite", imagem: "assets/images/obj-1114.png", disponivel: true },
+    { id: 85, nome: "Creme de Avelã ao leite Divino Nut 140g", descricao: "", preco: 11.7, categoria: "Doce de Leite", imagem: "assets/images/obj-1115.png", disponivel: true },
+    { id: 86, nome: "Doce Lili Jaca em Calda cx c/15", descricao: "", preco: 38.9, categoria: "Doce Lili", imagem: "assets/images/obj-1130.png", disponivel: true },
+    { id: 87, nome: "Doce Lili Leite Massa", descricao: "", preco: 31.99, categoria: "Doce Lili", imagem: "assets/images/obj-1132.png", disponivel: true },
+    { id: 88, nome: "Doce Lili Goiaba em calda", descricao: "", preco: 31.99, categoria: "Doce Lili", imagem: "assets/images/obj-1131.png", disponivel: true },
+    { id: 89, nome: "Doce Lili Leite em Calda", descricao: "", preco: 0, categoria: "Doce Lili", imagem: "assets/images/obj-1133.png", disponivel: true },
+    { id: 90, nome: "Doce Lili de Leite Com Ameixa", descricao: "", preco: 31.99, categoria: "Doce Lili", imagem: "assets/images/obj-1134.png", disponivel: true },
+    { id: 91, nome: "Doce Lili de Leite Com Maracujá", descricao: "", preco: 31.99, categoria: "Doce Lili", imagem: "assets/images/obj-1135.png", disponivel: true },
+    { id: 92, nome: "Doce Lili Banana em Calda", descricao: "", preco: 22.99, categoria: "Doce Lili", imagem: "assets/images/obj-1136.png", disponivel: true },
+    { id: 93, nome: "Doce Lili Limão em Calda Cx/15", descricao: "", preco: 36.99, categoria: "Doce Lili", imagem: "assets/images/obj-1152.png", disponivel: true },
+    { id: 94, nome: "Doce Lili Laranja em Calda Cx/15", descricao: "", preco: 22.99, categoria: "Doce Lili", imagem: "assets/images/obj-1149.png", disponivel: true },
+    { id: 95, nome: "Doce Lili Mamão em Calda Cx/15", descricao: "", preco: 22.99, categoria: "Doce Lili", imagem: "assets/images/obj-1150.png", disponivel: true },
+    { id: 96, nome: "Doce Lili Leite c/ Goiaba em Calda Cx/15", descricao: "", preco: 31.99, categoria: "Doce Lili", imagem: "assets/images/obj-1151.png", disponivel: true },
+    { id: 97, nome: "Doce Lili Cajú em Barra c/castanha 500g", descricao: "", preco: 12, categoria: "Doce Lili", imagem: "assets/images/obj-1147.png", disponivel: true },
+    { id: 98, nome: "Doce Lili, Goiaba c/Castanha em Barra 500g", descricao: "", preco: 12, categoria: "Doce Lili", imagem: "assets/images/obj-1148.png", disponivel: true },
+    { id: 99, nome: "Cajumix 500ml", descricao: "Fardo c/6", preco: 40, categoria: "Bebidas", imagem: "assets/images/obj-1165.png", disponivel: true },
+    { id: 100, nome: "Cajumix Fire 500ml", descricao: "Fardo c/6", preco: 42, categoria: "Bebidas", imagem: "assets/images/obj-1166.png", disponivel: true },
+    { id: 101, nome: "Cajuina Brasucos 500ml", descricao: "Fardo c/12", preco: 82, categoria: "Bebidas", imagem: "assets/images/obj-1169.png", disponivel: true },
+    { id: 102, nome: "Água Viena c/ gás 510ml", descricao: "Fardo c/12", preco: 22.5, categoria: "Bebidas", imagem: "assets/images/obj-1167.png", disponivel: true },
+    { id: 103, nome: "Água Viena sem gás 510ml", descricao: "Fardo c/12", preco: 17.5, categoria: "Bebidas", imagem: "assets/images/obj-1168.png", disponivel: true },
+    { id: 104, nome: "Sal Rosa do Himalaia", descricao: "cx c/12", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1187.png", disponivel: true },
+    { id: 105, nome: "Caldo de Galinha sem glutamato de sódio", descricao: "pote 150g cx c/12", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1182.png", disponivel: true },
+    { id: 106, nome: "Tempero Ana Maria, sem glutamato de sódio", descricao: "pote 100g cx c/12", preco: 6.49, categoria: "Temperos e Sal", imagem: "assets/images/obj-1183.png", disponivel: true },
+    { id: 107, nome: "Tempero Páprica Picante, sem glutamato de sódio", descricao: "pote 100g cx c/12", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1184.png", disponivel: true },
+    { id: 108, nome: "Caldo de Carne sem glutamato de sódio", descricao: "pote 150g cx c/12", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1185.png", disponivel: true },
+    { id: 109, nome: "Tempero Famoso, Edu Guedes, sem glutamato de sódio", descricao: "pote 100g cx c/12", preco: 6.49, categoria: "Temperos e Sal", imagem: "assets/images/obj-1186.png", disponivel: true },
+    { id: 110, nome: "Colorau, sem glutamato de sódio", descricao: "pote 100g cx c/12", preco: 0, categoria: "Temperos e Sal", imagem: "assets/images/obj-1181.png", disponivel: true },
+    { id: 111, nome: "Castanha de Cajú", descricao: "todos sem glutamato de sódio", preco: 9.9, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 112, nome: "Castanha do Pará", descricao: "todos sem glutamato de sódio", preco: 0, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 113, nome: "Pimenta preta moída", descricao: "todos sem glutamato de sódio", preco: 8.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 114, nome: "Tempero Baiano", descricao: "todos sem glutamato de sódio", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 115, nome: "Alho Frito", descricao: "todos sem glutamato de sódio", preco: 5.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 116, nome: "Bicarbonato de sódio", descricao: "todos sem glutamato de sódio", preco: 0, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 117, nome: "Chimichurri sem pimenta", descricao: "todos sem glutamato de sódio", preco: 6.49, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 118, nome: "Chimichurri com pimenta", descricao: "todos sem glutamato de sódio", preco: 6.49, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 119, nome: "Lemon Pepper", descricao: "todos sem glutamato de sódio", preco: 6.49, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 120, nome: "Açafrão", descricao: "todos sem glutamato de sódio", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 121, nome: "Cominho", descricao: "todos sem glutamato de sódio", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 122, nome: "Páprica doce", descricao: "todos sem glutamato de sódio", preco: 4.99, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 123, nome: "Páprica Defumada", descricao: "todos sem glutamato de sódio", preco: 5.29, categoria: "Temperos e Sal", imagem: "assets/images/sem-imagem.svg", disponivel: true },
+    { id: 124, nome: "Sal de Parrilla Ex. Sabor 330g", descricao: "Lemon Pepper Cx/12", preco: 13.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1207.png", disponivel: true },
+    { id: 125, nome: "Sal de Parrilla Ex. Sabor 330g", descricao: "Pimenta Preta Cx/12", preco: 13.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1198.png", disponivel: true },
+    { id: 126, nome: "Sal de Parrilla Ex. Sabor 330g", descricao: "Uruguaio Cx/12", preco: 13.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1200.png", disponivel: true },
+    { id: 127, nome: "Sal de Parrilla Ex. Sabor 330g", descricao: "Chimichurri Cx/12", preco: 13.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1202.png", disponivel: true },
+    { id: 128, nome: "Sal de Parrilla Ex. Sabor 330g", descricao: "Frango Cx/12", preco: 13.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-1204.png", disponivel: true },
+    { id: 129, nome: "Acendedor de Carvão, display", descricao: "com 12 cx cada uma c/6", preco: 5.99, categoria: "Temperos e Sal", imagem: "assets/images/obj-2106.png", disponivel: true },
+    { id: 130, nome: "Óleo de Coco Extra Virgem 200ml", descricao: "", preco: 22.9, categoria: "Temperos e Sal", imagem: "assets/images/obj-2110.png", disponivel: true },
+    { id: 131, nome: "Pimenta Gourmet Carolina Reaper, 60ml", descricao: "a pimenta mais gostosa do mundo, Fardo c/ 12 Unid.", preco: 15.2, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1220.png", disponivel: true },
+    { id: 132, nome: "Pimenta Gourmet ao leite de Coco", descricao: "150ml, Fardo c/ 12 Unid.", preco: 8.5, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1221.png", disponivel: true },
+    { id: 133, nome: "Pimenta Gourmet ao molho de Pequi", descricao: "150ml, Fardo c/ 12 Unid.", preco: 8.5, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1222.png", disponivel: true },
+    { id: 134, nome: "Pimenta Especial gota serena", descricao: "150ml Fardo c/ 12 Unid.", preco: 6.3, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1223.png", disponivel: true },
+    { id: 135, nome: "Pimenta especial em conserva", descricao: "150ml, fardo c/ 12 Unid.", preco: 9.3, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1235.png", disponivel: true },
+    { id: 136, nome: "Pimenta especial Larva de Vulcão", descricao: "100ml, Fardo c/12 Unid.", preco: 8.5, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1238.png", disponivel: true },
+    { id: 137, nome: "Molho Gourmet para preparo de vários pratos", descricao: "300ml, fardo c/12 unid.", preco: 6.99, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1237.png", disponivel: true },
+    { id: 138, nome: "Molho Gourmet para Carnes", descricao: "300ml, fardos c/12 Unid.", preco: 6.99, categoria: "Pimentas Gourmet", imagem: "assets/images/obj-1236.png", disponivel: true },
+    { id: 139, nome: "Molho Cremoso Extra Forte", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2152.png", disponivel: true },
+    { id: 140, nome: "Molho Cremoso Delícia Picante", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2155.png", disponivel: true },
+    { id: 141, nome: "Molho Cremoso Ervas Finas", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2158.png", disponivel: true },
+    { id: 142, nome: "Molho Pequi", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2164.png", disponivel: true },
+    { id: 143, nome: "Molho Carolina Reaper", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 10.37, categoria: "Molhos", imagem: "assets/images/obj-2167.png", disponivel: true },
+    { id: 144, nome: "Molho Pimenta Vermelha", descricao: "Cremoso especial de Pimenta Brasileiríssimo", preco: 3.99, categoria: "Molhos", imagem: "assets/images/obj-2170.png", disponivel: true },
+    { id: 145, nome: "Calabresa com especiarias", descricao: "", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2209.png", disponivel: true },
+    { id: 146, nome: "Barbecue Chipotle", descricao: "", preco: 5.99, categoria: "Molhos", imagem: "assets/images/obj-2212.png", disponivel: true },
+    { id: 147, nome: "Molho Shoyo", descricao: "", preco: 3.99, categoria: "Molhos", imagem: "assets/images/obj-2206.png", disponivel: true },
+    { id: 148, nome: "Molho Salada Tipo Italiano", descricao: "", preco: 0, categoria: "Molhos", imagem: "assets/images/obj-2194.png", disponivel: true },
+    { id: 149, nome: "Molho Salada Limão", descricao: "", preco: 0, categoria: "Molhos", imagem: "assets/images/obj-2197.png", disponivel: true },
+    { id: 150, nome: "Molho Salada Rose", descricao: "", preco: 7.88, categoria: "Molhos", imagem: "assets/images/obj-2200.png", disponivel: true },
+    { id: 151, nome: "Poderoso Multi inseticida Aerosol (Mata Tudo)", descricao: "É indicado contra mosquitos, baratas, escorpiões, moscas, aranhas, formigas, pulgas e carrapatos. Desenvolvido em base aquosa utilizando a mais moderna tecnologia. Disponíveis: Citronela, Eucalipto, Mata Baratas, Mata escorpião.", preco: 12.49, categoria: "Lar e Odorizantes", imagem: "assets/images/obj-1292.png", disponivel: true },
+    { id: 152, nome: "Gel inseticida para baratas", descricao: "Gel inseticida para o combate a baratas alemãs – baratinhas (Blatella germânica) e também elimina a barata de esgoto ou voadeira (Periplaneta americana). Utilize o BARAKELL em casa e apartamentos.", preco: 8.7, categoria: "Lar e Odorizantes", imagem: "assets/images/obj-2224.png", disponivel: true },
+    { id: 153, nome: "Formikell", descricao: "Eficaz contra formigas doceiras que são grandes causadoras de doenças.", preco: 8.7, categoria: "Lar e Odorizantes", imagem: "assets/images/obj-2225.png", disponivel: true },
+    { id: 154, nome: "Inseticida para moscas", descricao: "Inseticida com atrativo sexual, eficaz contra moscas. Aplicar filetes de 10cm de distância onde as moscas pousam.", preco: 8.7, categoria: "Lar e Odorizantes", imagem: "assets/images/obj-2227.png", disponivel: true },
+    { id: 155, nome: "Odorizadores de Ambientes", descricao: "Desenvolvido e formulado com exclusivas fragrâncias para refrescar o seu ambiente, criando um ambiente suavemente perfumado. É recomendado o uso em locais como banheiros, quartos, salas e escritórios. Disponíveis: Aquamarine, Chá Branco, Flores Campestres, Lavanda, Talco Baby e Verbena!", preco: 12.47, categoria: "Lar e Odorizantes", imagem: "assets/images/obj-1286.png", disponivel: true },
+    { id: 156, nome: "Poderoso Limpa Tudo", descricao: "Espuma poderosa desenvolvida para a limpeza automotiva e doméstica em locais como partes internas do veículo, sofás, cortinas, carpetes, tecidos em geral, computadores, fórmicas, vinil, plástico, borrachas, tênis, sapatos, sandálias, bolsas, mochilas e couro.", preco: 0, categoria: "Limpeza e Higiene", imagem: "assets/images/obj-1305.png", disponivel: true },
+    { id: 157, nome: "Poderoso Brilha Inox", descricao: "Produto desenvolvido para uso diário na limpeza de superfícies e utensílios de inox, alumínio, peças esmaltadas e plásticos, formando uma camada de proteção contra oxidação facilitando a limpeza e a manutenção. Pode ser aplicado em: elevadores, geladeiras, fogões, bandejas, churrasqueiras, corrimões, mesas, etc.", preco: 19.9, categoria: "Limpeza e Higiene", imagem: "assets/images/obj-1306.png", disponivel: true },
+    { id: 158, nome: "Poderoso Limpa Forno", descricao: "Facilita limpeza de fornos, assadores, coifas, grills, espetos, louças e demais utensílios de cozinha em forma de espuma. Não contém soda cáustica.", preco: 0, categoria: "Limpeza e Higiene", imagem: "assets/images/obj-1307.png", disponivel: true },
+    { id: 159, nome: "Skin Espuma de Barbear", descricao: "SKIN – ESPUMA DE BARBEAR é uma espuma hidratante, com perfume neutro que prepara a sua pele, para um barbear suave com um deslizamento incrível.", preco: 0, categoria: "Limpeza e Higiene", imagem: "assets/images/obj-1308.png", disponivel: true },
+    { id: 160, nome: "Perfume Pé Deo Pédico", descricao: "Usado para manter os pés secos e perfumados. Agite bem a embalagem, aplique uma quantidade uniforme do Perfume Pé da Sortie entre os dedos previamente secos duas vezes ao dia, de preferência após o banho. Aumente a proteção usando o produto no calçado.", preco: 0, categoria: "Limpeza e Higiene", imagem: "assets/images/obj-1309.png", disponivel: true },
+    { id: 161, nome: "Shampoo e condicionar neutro", descricao: "Indicação: Indicado para banho e higiene de cães e gatos, oferecendo uma melhor escovação da pelagem.", preco: 16.5, categoria: "Pets", imagem: "assets/images/obj-2258.png", disponivel: true },
+    { id: 162, nome: "Shampoo e condicionar filhotes", descricao: "Indicação: Indicado para banho e higiene de filhotes de cães e gatos.", preco: 16.5, categoria: "Pets", imagem: "assets/images/obj-2260.png", disponivel: true },
+    { id: 163, nome: "Shampoo e condicionar clareador", descricao: "Indicação: Contém branqueador óptico que destaca as cores claras sem prejudicar as cores escuras de cães e gatos.", preco: 16.5, categoria: "Pets", imagem: "assets/images/obj-2259.png", disponivel: true },
+    { id: 164, nome: "Shampoo e condicionar, Normal e 6 em 1", descricao: "O Shampoo 6 em 1 é indicado para: Tratamento e prevenção de parasitas como pulgas, carrapatos, sarnas e piolhos em cães, gatos e equinos.", preco: 0, categoria: "Pets", imagem: "assets/images/obj-2257.png", disponivel: true },
+    { id: 165, nome: "Shampoo & Condicionador Clorexidina 5 em 1", descricao: "Indicação de uso: Carrapato, Piolho, Pulga", preco: 0, categoria: "Pets", imagem: "assets/images/obj-2261.png", disponivel: true },
+    { id: 166, nome: "Afasta Pet", descricao: "É um educador de cães e gatos desenvolvido para condicionar seu animal a manter distância dos locais, ambientes e objetos desejados. Pode ser aplicado com segurança em áreas internas e externas sem causar danos ao homem e aos animais.", preco: 20.39, categoria: "Controle de Pragas", imagem: "assets/images/obj-1339.png", disponivel: true },
+    { id: 167, nome: "Afasta Pet Pipi Não Pode", descricao: "É indicado como educador de cães e gatos desenvolvido para condicionar seu animal a manter distância dos locais, ambientes e objetos desejados.", preco: 11.19, categoria: "Controle de Pragas", imagem: "assets/images/obj-1336.png", disponivel: true },
+    { id: 168, nome: "Afasta Pet Pipi Pode", descricao: "É indicado como auxiliar no adestramento sanitário de cães/gatos, com consequente proteção de tapetes, estofados, canteiros e outros lugares indevidos visados pelos animais para micção.", preco: 10.39, categoria: "Controle de Pragas", imagem: "assets/images/obj-1337.png", disponivel: true },
+    { id: 169, nome: "Afasta Pet Educador de Mordida", descricao: "É indicado para cães e gatos. Ajuda a proteger objetos e móveis que os animais possam lamber, mastigar ou morder destrutivamente como sapatos, móveis, tapetes, cortinas, bandagens, etc.", preco: 8.79, categoria: "Controle de Pragas", imagem: "assets/images/obj-1335.png", disponivel: true },
+    { id: 170, nome: "Cupinicida Zodrin", descricao: "Eficaz contra cupins, baratas e formigas. Efetuar a aplicação por pulverização do cupinicida zodrin pronto para uso em residências, edifícios, industrias, galpões, escritórios e dependências comerciais onde os insetos normalmente são encontrados.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1333.png", disponivel: true },
+    { id: 171, nome: "Alpha Ciper - Ovinos, cães, aves, bovinos, ambientes, instalações", descricao: "e equipamentos. Auxilia no combate de carrapatos, pulgas, piolhos, moscas, sarnas e bernes.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1354.png", disponivel: true },
+    { id: 172, nome: "Kellmat Sementes de Cereais", descricao: "É indicado para o combate a ratos, ratazanas e camundongos em áreas internas e externas.", preco: 42, categoria: "Controle de Pragas", imagem: "assets/images/obj-1351.png", disponivel: true },
+    { id: 173, nome: "Kellmat Raticida Granulado", descricao: "Indicado para o combate a ratos, ratazanas e camundongo em áreas internas e externas.", preco: 1.99, categoria: "Controle de Pragas", imagem: "assets/images/obj-1349.png", disponivel: true },
+    { id: 174, nome: "Poderoso Cola Mosca", descricao: "Cartela cola mosca é uma armadilha não tóxica indicada para exterminar moscas, em locais onde venenos podem ser perigosos, como cozinhas, depósitos de alimentos, hospitais, escolas, indústrias, restaurantes, próximo a currasqueiras, plantações etc. Kellmat Cola Rato. Examinar a área e identificar os locais de passagem do roedor. Abrir lentamente. Colocar na passagem do roedor como rodapés e cantos de parede. Se preferir, fixar o Kellmat ratoeira adesiva no local escolhido. Para melhores resultados, colocar um atrativo como isca no centro da armadilha. Verificar diariamente se não houver captura após 2 dias, mudar a armadilha de lugar.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1352.png", disponivel: true },
+    { id: 175, nome: "Poderoso Pronto Uso", descricao: "Eficaz no combate a cupins, baratas e formigas. Efetuar a aplicação por pulverização do poderoso pronto para uso em residências, edifícios industriais, galpões, escritórios e dependências comerciais onde os insetos normalmente são encontrados.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1370.png", disponivel: true },
+    { id: 176, nome: "Poderoso Mosquicida Granulado", descricao: "Inseticida com atrativo sexual, eficaz contra moscas.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1369.png", disponivel: true },
+    { id: 177, nome: "Kelldrin SC25", descricao: "Indicação de uso: Aranha, Barata, Carrapato, Cupim, Escorpião, Formiga, Lagartas, Pulga, Pulgão, Traça", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1365.png", disponivel: true },
+    { id: 178, nome: "Poderoso VET 30ml", descricao: "Indicado para cães e gatos, adultos e filhotes (a partir de 15 dias de vida). Tratamento e controle de infestações por pulgas, piolhos, carrapatos e sarna sarcóptica. O inseticida é indicado também para o controle de cupins, formigas, baratas e escorpiões no ambiente. (Fipronil 2,5% e Piriproxifen 2,5%)", preco: 12, categoria: "Controle de Pragas", imagem: "assets/images/obj-1368.png", disponivel: true },
+    { id: 179, nome: "Kellthine Mata Cupim", descricao: "Combate de cupins em peças de madeira.", preco: 0, categoria: "Controle de Pragas", imagem: "assets/images/obj-1366.png", disponivel: true }
 ];
 
 /* --------------------------------------------------------------------------
@@ -111,13 +270,26 @@ const produtos = [
 
 const categorias = [
     "Todos",
-    "Paçocas",
-    "Pipocas",
-    "Doces",
-    "Chocolates",
-    "Balas e Gomas",
-    "Salgadinhos",
-    "Combos"
+    "Doces Amor de Minas",
+    "Bombons e Chocolates",
+    "Doces em Pote",
+    "Amendoim Japonês",
+    "Amendoins",
+    "Paçocas e Cocadas",
+    "Balas e Pirulitos",
+    "Barras de Cereal",
+    "Bananas e Frutas",
+    "Méis e Derivados",
+    "Doce de Leite",
+    "Doce Lili",
+    "Bebidas",
+    "Temperos e Sal",
+    "Pimentas Gourmet",
+    "Molhos",
+    "Lar e Odorizantes",
+    "Limpeza e Higiene",
+    "Pets",
+    "Controle de Pragas"
 ];
 
 /* --------------------------------------------------------------------------
@@ -139,7 +311,9 @@ let produtoModalAtual = null;
 let etapaAtual = 1;
 
 // Chave usada no localStorage. Cada empresa salva o carrinho de forma separada.
-const CHAVE_LOCALSTORAGE = "pedido_" + (CONFIG.nomeEmpresa || "empresa");
+// O sufixo _v2 descarta carrinhos salvos antes da migração do catálogo, quando
+// os ids 1-20 apontavam para produtos antigos que já não existem mais.
+const CHAVE_LOCALSTORAGE = "pedido_" + (CONFIG.nomeEmpresa || "empresa") + "_v2";
 
 /* ==========================================================================
    ATALHO PARA PEGAR ELEMENTOS DA PÁGINA
@@ -163,6 +337,16 @@ function formatarMoeda(valor) {
         style: "currency",
         currency: "BRL"
     }).format(valor);
+}
+
+/* --------------------------------------------------------------------------
+   Preços vindos da "lista de preços.PDF". Produtos com preco > 0 mostram o
+   valor em reais; os que ainda não têm preço cadastrado (preco: 0) exibem
+   "A combinar" e são combinados direto no WhatsApp.
+   ========================================================================== */
+
+function textoValor(valor) {
+    return valor > 0 ? formatarMoeda(valor) : "A combinar";
 }
 
 /* ==========================================================================
@@ -323,7 +507,7 @@ function renderizarProdutos() {
                 "<h3>" + produto.nome + "</h3>" +
                 "<p>" + produto.descricao + "</p>" +
                 '<div class="produto-rodape">' +
-                    '<span class="preco">' + formatarMoeda(produto.preco) + "</span>" +
+                    '<span class="preco">' + textoValor(produto.preco) + "</span>" +
                     '<button type="button" class="btn-adicionar" ' +
                         (produto.disponivel ? "" : "disabled") + ">" +
                         (produto.disponivel ? "Adicionar ao pedido" : "Indisponível") +
@@ -357,7 +541,7 @@ function abrirModalProduto(id) {
     el("modalCategoria").textContent = produto.categoria;
     el("modalNome").textContent = produto.nome;
     el("modalDescricao").textContent = produto.descricao;
-    el("modalPreco").textContent = formatarMoeda(produto.preco);
+    el("modalPreco").textContent = textoValor(produto.preco);
     el("modalQtd").textContent = "1";           // quantidade começa em 1
     el("modalObservacao").value = "";             // observação começa vazia
 
@@ -550,8 +734,10 @@ function atualizarCarrinho() {
                     ? '<p class="item-obs">Obs: ' + item.observacao + "</p>"
                     : "") +
                 '<p class="item-preco">' +
-                    formatarMoeda(produto.preco) + " • " + qtde + "x = " +
-                    formatarMoeda(produto.preco * qtde) +
+                    (produto.preco > 0
+                        ? formatarMoeda(produto.preco) + " • " + qtde + "x = " +
+                          formatarMoeda(produto.preco * qtde)
+                        : qtde + "x • A combinar") +
                 "</p>" +
                 '<div class="item-acoes">' +
                     '<button type="button" class="qt-btn" data-acao="menos" aria-label="Diminuir quantidade">−</button>' +
@@ -583,22 +769,22 @@ function atualizarCarrinho() {
     const total = calcularTotal();
 
     // Resumo da etapa 1 (Produtos)
-    el("subtotalTxt").textContent = formatarMoeda(subtotal);
+    el("subtotalTxt").textContent = textoValor(subtotal);
     el("taxaTxt").textContent = formatarMoeda(taxa);
-    el("totalTxt").textContent = formatarMoeda(total);
+    el("totalTxt").textContent = textoValor(total);
     el("taxaLinha").hidden = taxa === 0; // só mostra a linha de taxa se houver taxa
 
     // Resumo da etapa 2 (Entrega)
-    el("entSubtotalTxt").textContent = formatarMoeda(subtotal);
+    el("entSubtotalTxt").textContent = textoValor(subtotal);
     el("entTaxaTxt").textContent = formatarMoeda(taxa);
-    el("entTotalTxt").textContent = formatarMoeda(total);
+    el("entTotalTxt").textContent = textoValor(total);
     el("entTaxaLinha").hidden = taxa === 0;
     // Mostra o resumo da etapa 2 quando o cliente já escolheu uma forma
     // de recebimento OU quando existe taxa para ser exibida
     el("resumoEntrega").hidden = taxa === 0 && obterFormaRecebimento() === "";
 
     // Total fixo no rodapé do painel (visível em todas as etapas)
-    el("totalBarTxt").textContent = formatarMoeda(total);
+    el("totalBarTxt").textContent = textoValor(total);
 }
 
 /* --------------------------------------------------------------------------
@@ -876,7 +1062,7 @@ function montarConfirmacao() {
         produtosHtml +=
             "<li>" +
                 "<span>" + item.quantidade + "x " + produto.nome + "</span>" +
-                "<strong>" + formatarMoeda(produto.preco * item.quantidade) + "</strong>" +
+                "<strong>" + textoValor(produto.preco * item.quantidade) + "</strong>" +
             "</li>";
     });
 
@@ -902,11 +1088,11 @@ function montarConfirmacao() {
 
         '<div class="confirmacao-blocos">' +
             "<h4>Resumo</h4>" +
-            '<div class="resumo-linha"><span>Subtotal</span><span>' + formatarMoeda(subtotal) + "</span></div>" +
+            '<div class="resumo-linha"><span>Subtotal</span><span>' + textoValor(subtotal) + "</span></div>" +
             (taxa > 0
                 ? '<div class="resumo-linha"><span>Taxa de entrega</span><span>' + formatarMoeda(taxa) + "</span></div>"
                 : "") +
-            '<div class="resumo-linha total"><span>Total estimado</span><span>' + formatarMoeda(total) + "</span></div>" +
+            '<div class="resumo-linha total"><span>Total estimado</span><span>' + textoValor(total) + "</span></div>" +
         "</div>" +
 
         '<div class="confirmacao-blocos">' +
@@ -970,7 +1156,8 @@ function gerarMensagemWhatsApp() {
     carrinho.forEach(function (item) {
         const produto = buscarProduto(item.id);
         linhas.push(
-            item.quantidade + "x " + produto.nome + " — " + formatarMoeda(produto.preco)
+            item.quantidade + "x " + produto.nome +
+            (produto.preco > 0 ? " — " + formatarMoeda(produto.preco) : "")
         );
         if (item.observacao) {
             linhas.push("   Obs: " + item.observacao);
@@ -980,12 +1167,12 @@ function gerarMensagemWhatsApp() {
     // Resumo de valores
     linhas.push("");
     linhas.push("*RESUMO*");
-    linhas.push("Subtotal: " + formatarMoeda(calcularSubtotal()));
+    linhas.push("Subtotal: " + textoValor(calcularSubtotal()));
     const taxa = calcularTaxa();
     if (taxa > 0) {
         linhas.push("Taxa de entrega: " + formatarMoeda(taxa));
     }
-    linhas.push("*Total estimado: " + formatarMoeda(calcularTotal()) + "*");
+    linhas.push("*Total estimado: " + textoValor(calcularTotal()) + "*");
     linhas.push("");
     linhas.push("*Forma de recebimento:* " + (dados.forma === "entrega" ? "Entrega" : "Retirada no local"));
 
@@ -1080,6 +1267,12 @@ function carregarCarrinho() {
     } catch (erro) {
         carrinho = [];
     }
+    // Descarta itens de ids que não existem mais no catálogo (carrinho antigo
+    // ou arquivo adulterado), para o resto do código nunca receber undefined.
+    carrinho = carrinho.filter(function (item) {
+        return item && typeof item.id === "number" &&
+            item.quantidade > 0 && buscarProduto(item.id);
+    });
 }
 
 /* ==========================================================================
