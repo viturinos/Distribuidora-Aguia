@@ -35,9 +35,31 @@
     >
 
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
 </head>
 
 <body>
+
+    <!-- ================================================== -->
+    <!-- CORTINA DE CARREGAMENTO                            -->
+    <!-- ================================================== -->
+    <div class="cortina" id="cortinaCarregamento" role="status" aria-label="Carregando o catálogo">
+        <div class="cortina-lado cortina-esquerda" aria-hidden="true"></div>
+        <div class="cortina-lado cortina-direita" aria-hidden="true"></div>
+
+        <div class="cortina-conteudo">
+            <span class="cortina-logo">
+                <img src="./img/logotipo agui distribuidora.png" alt="">
+            </span>
+            <strong class="cortina-nome">Distribuidora <b>ÁGUIA</b></strong>
+            <span class="cortina-barra" aria-hidden="true"><i></i></span>
+            <small class="cortina-dica">Carregando o catálogo…</small>
+        </div>
+    </div>
+
+    <noscript>
+        <style>.cortina { display: none !important; }</style>
+    </noscript>
 
     <!-- ================================================== -->
     <!-- HEADER                                             -->
@@ -103,26 +125,44 @@
             <div class="container hero-grid">
 
                 <div class="hero-texto">
-                    
+
+
                     <h1 id="heroTitulo">Tradição e variedade em cada pedido.</h1>
                     <p id="heroTexto">Paçocas, doces, pipocas e muito mais. Confira nosso catálogo e monte seu pedido de forma rápida e prática.</p>
 
                     <div class="hero-acoes">
-                        <a href="#produtos" class="btn btn-primario">Ver produtos</a>
+                        <a href="#produtos" class="btn btn-primario">
+                            Ver produtos
+                            <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M5 12h13.5M13 5.5 19.5 12 13 18.5"/>
+                            </svg>
+                        </a>
                         <a href="#produtos" class="btn btn-secundario">Fazer pedido</a>
                     </div>
 
                     <ul class="hero-info">
                         <li id="heroHorario">
-                            <span aria-hidden="true">🕐</span>
+                            <span class="hero-info-ic" aria-hidden="true">
+                                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>
+                                </svg>
+                            </span>
                             <span>Horário: <strong id="horarioTexto">[HORÁRIO]</strong></span>
                         </li>
                         <li id="heroLocal">
-                            <span aria-hidden="true">📍</span>
+                            <span class="hero-info-ic" aria-hidden="true">
+                                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/>
+                                </svg>
+                            </span>
                             <span><strong id="cidadeTexto">Picos</strong> — <strong id="estadoTexto">PI</strong></span>
                         </li>
                         <li id="heroWhats">
-                            <span aria-hidden="true">💬</span>
+                            <span class="hero-info-ic" aria-hidden="true">
+                                <svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/>
+                                </svg>
+                            </span>
                             <span>Pedidos direto no <strong>WhatsApp</strong></span>
                         </li>
                     </ul>
@@ -137,30 +177,47 @@
         <section class="destaques" id="destaques">
             <div class="container">
 
-                <h2 class="titulo-secao">Por que comprar com a Águia?</h2>
+                <h2 class="titulo-secao revelar">Por que comprar com a Águia?</h2>
 
                 <div class="destaques-grid">
 
-                    <article class="destaque-card">
-                        <div class="destaque-icone" aria-hidden="true">⭐</div>
+                    <article class="destaque-card revelar">
+                        <div class="destaque-icone" aria-hidden="true">
+                            <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m12 3.6 2.6 5.3 5.9.9-4.3 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.6Z"/>
+                            </svg>
+                        </div>
                         <h3>Qualidade</h3>
                         <p>Produtos selecionados de fornecedores confiáveis, sempre fresquinhos.</p>
                     </article>
 
-                    <article class="destaque-card">
-                        <div class="destaque-icone" aria-hidden="true">📦</div>
+                    <article class="destaque-card revelar">
+                        <div class="destaque-icone" aria-hidden="true">
+                            <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.5 16.5V8.2a1.5 1.5 0 0 0-.8-1.3l-6.7-3.8a1.5 1.5 0 0 0-1.5 0L4.8 6.9a1.5 1.5 0 0 0-.8 1.3v8.3a1.5 1.5 0 0 0 .8 1.3l6.7 3.8a1.5 1.5 0 0 0 1.5 0l6.7-3.8a1.5 1.5 0 0 0 .8-1.3Z"/>
+                                <path d="m4.3 7.6 7.7 4.4 7.7-4.4M12 21.2V12"/>
+                            </svg>
+                        </div>
                         <h3>Variedade</h3>
                         <p>Doces, paçocas, pipocas e salgadinhos para revenda e para sua festa.</p>
                     </article>
 
-                    <article class="destaque-card">
-                        <div class="destaque-icone" aria-hidden="true">🤝</div>
+                    <article class="destaque-card revelar">
+                        <div class="destaque-icone" aria-hidden="true">
+                            <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21.5 16.9v2.6a1.8 1.8 0 0 1-2 1.8 17.6 17.6 0 0 1-7.7-2.7 17.3 17.3 0 0 1-5.3-5.3A17.6 17.6 0 0 1 3.8 5.5 1.8 1.8 0 0 1 5.6 3.5h2.6a1.8 1.8 0 0 1 1.8 1.6c.1.9.3 1.7.6 2.5a1.8 1.8 0 0 1-.4 1.9L9.1 10.6a14 14 0 0 0 5.3 5.3l1.1-1.1a1.8 1.8 0 0 1 1.9-.4c.8.3 1.6.5 2.5.6a1.8 1.8 0 0 1 1.6 1.9Z"/>
+                            </svg>
+                        </div>
                         <h3>Atendimento</h3>
                         <p>Fale diretamente com nossa equipe e combine preços pelo WhatsApp.</p>
                     </article>
 
-                    <article class="destaque-card">
-                        <div class="destaque-icone" aria-hidden="true">⚡</div>
+                    <article class="destaque-card revelar">
+                        <div class="destaque-icone" aria-hidden="true">
+                            <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M13.2 2.5 4.5 13.4h6.3l-1 8.1 8.7-10.9h-6.3l1-8.1Z"/>
+                            </svg>
+                        </div>
                         <h3>Praticidade</h3>
                         <p>Monte seu pedido em poucos cliques, sem cadastro e sem burocracia.</p>
                     </article>
@@ -175,7 +232,7 @@
         <section class="produtos" id="produtos">
             <div class="container">
 
-                <header class="produtos-cabecalho">
+                <header class="produtos-cabecalho revelar">
                     <h2 class="titulo-secao">Nossos produtos</h2>
                     <p>Escolha seus favoritos, adicione ao pedido e envie para gente no WhatsApp.</p>
                 </header>
@@ -197,8 +254,10 @@
                         >
                     </div>
 
-                    <div class="categorias" id="categoriasLista" role="tablist" aria-label="Filtrar por categoria"></div>
+                    <div class="categorias" id="categoriasLista" role="group" aria-label="Filtrar por categoria"></div>
                 </div>
+
+                <p class="produtos-contagem" id="produtosContagem" role="status" aria-live="polite"></p>
 
                 <div class="produtos-grid" id="produtosGrid"></div>
 
@@ -212,7 +271,7 @@
         <section class="sobre" id="sobre">
             <div class="container sobre-grid">
 
-                <div class="sobre-imagem">
+                <div class="sobre-imagem revelar">
                     <img
                         src="assets/images/combo-tradicional.svg"
                         alt="Ilustração com produtos variados da Distribuidora Águia"
@@ -220,7 +279,7 @@
                     >
                 </div>
 
-                <div class="sobre-texto">
+                <div class="sobre-texto revelar">
                     <span class="chip">Sobre nós</span>
                     <h2 class="titulo-secao">A tradição do sabor, do nosso jeito.</h2>
                     <p>
@@ -243,39 +302,55 @@
         <section class="contato" id="contato">
             <div class="container">
 
-                <header class="contato-cabecalho">
+                <header class="contato-cabecalho revelar">
                     <h2 class="titulo-secao">Fale com a gente</h2>
                     <p>Dúvidas, encomendas e orçamentos são resolvidos rapidinho pelo WhatsApp.</p>
                 </header>
 
                 <div class="contato-grid">
 
-                    <a href="#contato" class="contato-card" id="contatoWhatsLink">
-                        <span class="contato-icone" aria-hidden="true">📲</span>
+                    <a href="#contato" class="contato-card revelar" id="contatoWhatsLink">
+                        <span class="contato-icone" aria-hidden="true">
+                            <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/>
+                            </svg>
+                        </span>
                         <div>
                             <h3>WhatsApp</h3>
                             <p id="contatoWhatsText">[NÚMERO DO WHATSAPP]</p>
                         </div>
                     </a>
 
-                    <a href="#" class="contato-card" id="contatoInstaLink" target="_blank" rel="noopener">
-                        <span class="contato-icone" aria-hidden="true">📸</span>
+                    <a href="#" class="contato-card revelar" id="contatoInstaLink" target="_blank" rel="noopener">
+                        <span class="contato-icone" aria-hidden="true">
+                            <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+                            </svg>
+                        </span>
                         <div>
                             <h3>Instagram</h3>
                             <p id="contatoInstaText">@vtrzin.sz</p>
                         </div>
                     </a>
 
-                    <div class="contato-card">
-                        <span class="contato-icone" aria-hidden="true">📍</span>
+                    <div class="contato-card revelar">
+                        <span class="contato-icone" aria-hidden="true">
+                            <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/>
+                            </svg>
+                        </span>
                         <div>
                             <h3>Endereço</h3>
                             <p id="contatoEnderecoText">[ENDEREÇO] — Picos · PI</p>
                         </div>
                     </div>
 
-                    <div class="contato-card">
-                        <span class="contato-icone" aria-hidden="true">🕐</span>
+                    <div class="contato-card revelar">
+                        <span class="contato-icone" aria-hidden="true">
+                            <svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>
+                            </svg>
+                        </span>
                         <div>
                             <h3>Horário de funcionamento</h3>
                             <p id="contatoHorarioText">[HORÁRIO]</p>
@@ -321,11 +396,31 @@
 
             <div class="footer-coluna">
                 <h3>Atendimento</h3>
-                <ul>
-                    <li>📲 WhatsApp: <a href="#contato" id="footerWhatsLink">[NÚMERO]</a></li>
-                    <li>📸 Instagram: <a href="#" id="footerInstaLink" target="_blank" rel="noopener">@[INSTAGRAM]</a></li>
-                    <li>📍 [ENDEREÇO] — Picos · PI</li>
-                    <li>🕐 [HORÁRIO]</li>
+                <ul class="footer-contato">
+                    <li>
+                        <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/>
+                        </svg>
+                        <span>WhatsApp: <a href="#contato" id="footerWhatsLink">[NÚMERO]</a></span>
+                    </li>
+                    <li>
+                        <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/>
+                        </svg>
+                        <span>Instagram: <a href="#" id="footerInstaLink" target="_blank" rel="noopener">@[INSTAGRAM]</a></span>
+                    </li>
+                    <li>
+                        <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 10.5c0 5.5-8 11.5-8 11.5s-8-6-8-11.5a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10.3" r="2.8"/>
+                        </svg>
+                        <span>[ENDEREÇO] — Picos · PI</span>
+                    </li>
+                    <li>
+                        <svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>
+                        </svg>
+                        <span>[HORÁRIO]</span>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -344,8 +439,18 @@
     <aside class="carrinho" id="carrinho" aria-label="Meu pedido" aria-hidden="true">
 
         <div class="carrinho-header">
-            <h2>Meu pedido 🛒</h2>
-            <button type="button" class="fechar-btn" id="fecharCarrinhoBtn" aria-label="Fechar carrinho">✕</button>
+            <h2>
+                <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M2.5 3.5h2.4l2.5 11.3A2 2 0 0 0 9.3 16.3H18a2 2 0 0 0 2-1.6l1.5-7.8H6.1"/>
+                    <circle cx="9.5" cy="20" r="1.5"/><circle cx="17.5" cy="20" r="1.5"/>
+                </svg>
+                Meu pedido
+            </h2>
+            <button type="button" class="fechar-btn" id="fecharCarrinhoBtn" aria-label="Fechar carrinho">
+                <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>
+                </svg>
+            </button>
         </div>
 
         <!-- Barra de progresso do pedido -->
@@ -363,11 +468,20 @@
                 <div id="carrinhoItens" class="carrinho-itens"></div>
 
                 <button type="button" class="link-limpar" id="limparPedidoBtn" hidden>
-                    🗑️ Limpar pedido
+                    <svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M4 6.5h16M9.5 6.5V5A1.5 1.5 0 0 1 11 3.5h2A1.5 1.5 0 0 1 14.5 5v1.5M6.5 6.5 7.4 19a1.5 1.5 0 0 0 1.5 1.4h6.2a1.5 1.5 0 0 0 1.5-1.4l.9-12.5"/>
+                        <path d="M10.2 10.5v6M13.8 10.5v6"/>
+                    </svg>
+                    Limpar pedido
                 </button>
 
                 <div class="carrinho-vazio" id="carrinhoVazio">
-                    <span class="vazio-icone" aria-hidden="true">🛒</span>
+                    <span class="vazio-icone" aria-hidden="true">
+                        <svg class="ic" width="54" height="54" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2.5 3.5h2.4l2.5 11.3A2 2 0 0 0 9.3 16.3H18a2 2 0 0 0 2-1.6l1.5-7.8H6.1"/>
+                            <circle cx="9.5" cy="20" r="1.5"/><circle cx="17.5" cy="20" r="1.5"/>
+                        </svg>
+                    </span>
                     <h3>Seu pedido está vazio.</h3>
                     <p>Escolha nossos produtos e monte seu pedido.</p>
                     <button type="button" class="btn btn-primario" id="verProdutosBtn">Ver produtos</button>
@@ -403,11 +517,27 @@
                     <div class="recebimento-opcoes">
                         <label class="recebimento-opcao">
                             <input type="radio" name="recebimento" value="entrega" id="optEntrega">
-                            <span>🛵 <strong>Entrega</strong><br><small>No seu endereço</small></span>
+                            <span>
+                                <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M14.5 17.5V6.8a1.3 1.3 0 0 0-1.3-1.3H3.3a1.3 1.3 0 0 0-1.3 1.3v9.4a1.3 1.3 0 0 0 1.3 1.3h1"/>
+                                    <path d="M14.5 9.3h3.4l3.1 3.4v3.5a1.3 1.3 0 0 1-1.3 1.3h-1"/>
+                                    <circle cx="6.6" cy="17.9" r="2.1"/><circle cx="17.4" cy="17.9" r="2.1"/>
+                                    <path d="M8.7 17.9h6.6"/>
+                                </svg>
+                                <strong>Entrega</strong><br><small>No seu endereço</small>
+                            </span>
                         </label>
                         <label class="recebimento-opcao">
                             <input type="radio" name="recebimento" value="retirada" id="optRetirada">
-                            <span>🏪 <strong>Retirada</strong><br><small>No nosso local</small></span>
+                            <span>
+                                <svg class="ic" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M4.5 10.5V19a1.5 1.5 0 0 0 1.5 1.5h12A1.5 1.5 0 0 0 19.5 19v-8.5"/>
+                                    <path d="M2.8 7.4 4.5 4a1.5 1.5 0 0 1 1.4-.9h12.2a1.5 1.5 0 0 1 1.4.9l1.7 3.4"/>
+                                    <path d="M2.8 7.4a2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0"/>
+                                    <path d="M9.5 20.5v-5h5v5"/>
+                                </svg>
+                                <strong>Retirada</strong><br><small>No nosso local</small>
+                            </span>
                         </label>
                     </div>
                 </fieldset>
@@ -460,7 +590,12 @@
 
             <!-- ETAPA 4: ENVIO / CONFIRMAÇÃO -->
             <div class="carrinho-etapa" id="carrinhoEtapa4" hidden>
-                <h3 class="etapa-titulo">Confira seu pedido ✅</h3>
+                <h3 class="etapa-titulo">
+                    Confira seu pedido
+                    <svg class="ic" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"/><path d="m8.2 12.3 2.6 2.6 5-5.4"/>
+                    </svg>
+                </h3>
                 <p class="etapa-sub">Revise tudo antes de enviar para o nosso WhatsApp.</p>
                 <div id="confirmacaoResumo" class="confirmacao"></div>
                 <p class="aviso-carrinho">
@@ -480,7 +615,12 @@
                 <strong id="totalBarTxt">R$ 0,00</strong>
             </div>
             <div class="footer-acoes">
-                <button type="button" class="btn btn-ghost" id="btnVoltar">← Voltar</button>
+                <button type="button" class="btn btn-ghost" id="btnVoltar">
+                    <svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M19 12H5.5M11.5 18.5 5 12l6.5-6.5"/>
+                    </svg>
+                    Voltar
+                </button>
                 <button type="button" class="btn btn-primario" id="btnContinuar">Continuar</button>
             </div>
         </div>
@@ -491,7 +631,11 @@
     <!-- ================================================== -->
     <div class="modal" id="modalProduto" role="dialog" aria-modal="true" aria-labelledby="modalNome" hidden>
         <div class="modal-conteudo">
-            <button type="button" class="modal-fechar" id="fecharModalProdutoBtn" aria-label="Fechar detalhes do produto">✕</button>
+            <button type="button" class="modal-fechar" id="fecharModalProdutoBtn" aria-label="Fechar detalhes do produto">
+                <svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                    <path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/>
+                </svg>
+            </button>
 
             <div class="modal-imagem">
                 <img id="modalImagem" src="" alt="">

@@ -327,6 +327,35 @@ function el(id) {
 }
 
 /* ==========================================================================
+   ÍCONES (SVG inline — mesmos desenhos usados no HTML)
+   --------------------------------------------------------------------------
+   São strings de SVG para o JavaScript conseguir inserir ícones dentro dos
+   HTMLs que ele mesmo monta (cards, carrinho, avisos etc.).
+   ========================================================================== */
+
+function icone(caminhos, tamanho, preenchido) {
+    const t = tamanho || 18;
+    return (
+        '<svg class="ic" width="' + t + '" height="' + t + '" viewBox="0 0 24 24" ' +
+        'fill="' + (preenchido ? "currentColor" : "none") + '" stroke="currentColor" ' +
+        'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+        caminhos +
+        "</svg>"
+    );
+}
+
+const ICONES = {
+    carrinho: '<path d="M2.5 3.5h2.4l2.5 11.3A2 2 0 0 0 9.3 16.3H18a2 2 0 0 0 2-1.6l1.5-7.8H6.1"/><circle cx="9.5" cy="20" r="1.5"/><circle cx="17.5" cy="20" r="1.5"/>',
+    buscaVazia: '<circle cx="11" cy="11" r="7"/><path d="m20.5 20.5-4.2-4.2M9 9l4 4M13 9l-4 4"/>',
+    check: '<path d="m5 12.5 4.5 4.5L19 7.5"/>',
+    alerta: '<path d="M10.6 4.1 2.9 17.4A1.7 1.7 0 0 0 4.4 20h15.2a1.7 1.7 0 0 0 1.5-2.6L13.4 4.1a1.7 1.7 0 0 0-2.8 0Z"/><path d="M12 9.5v4.2M12 16.8h.01"/>',
+    mais: '<path d="M12 5.5v13M5.5 12h13"/>',
+    caminhao: '<path d="M14.5 17.5V6.8a1.3 1.3 0 0 0-1.3-1.3H3.3a1.3 1.3 0 0 0-1.3 1.3v9.4a1.3 1.3 0 0 0 1.3 1.3h1"/><path d="M14.5 9.3h3.4l3.1 3.4v3.5a1.3 1.3 0 0 1-1.3 1.3h-1"/><circle cx="6.6" cy="17.9" r="2.1"/><circle cx="17.4" cy="17.9" r="2.1"/><path d="M8.7 17.9h6.6"/>',
+    loja: '<path d="M4.5 10.5V19a1.5 1.5 0 0 0 1.5 1.5h12A1.5 1.5 0 0 0 19.5 19v-8.5"/><path d="M2.8 7.4 4.5 4a1.5 1.5 0 0 1 1.4-.9h12.2a1.5 1.5 0 0 1 1.4.9l1.7 3.4"/><path d="M2.8 7.4a2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0 2.4 2.4 0 0 0 4.7 0"/><path d="M9.5 20.5v-5h5v5"/>',
+    zap: '<path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.4 8.4 0 1 1 21 11.5Z"/>'
+};
+
+/* ==========================================================================
    FORMATAR VALOR EM REAIS
    --------------------------------------------------------------------------
    Converte 6.5 em "R$ 6,50". Usa o formato brasileiro de moeda.
@@ -376,7 +405,115 @@ function iniciar() {
     atualizarCarrinho();       // mostra o carrinho e o contador com os itens
     renderizarProdutos();      // desenha os cards de produtos
     configurarEventos();       // liga todos os cliques e ações da página
+    configurarRevelacoes();    // anima os blocos ao entrar na tela
+    configurarRolagemHeader(); // sombra no cabeçalho ao rolar a página
     el("anoAtual").textContent = String(new Date().getFullYear()); // ano do rodapé
+}
+
+/* --------------------------------------------------------------------------
+   CORTINA DE CARREGAMENTO
+   --------------------------------------------------------------------------
+   A cortina fica na tela até a página (e as imagens) terminarem de carregar.
+   Depois ela "abre" para os lados e some. Dois seguranças:
+     - "load": disparado quando tudo terminou de baixar.
+     - timeout: esconde mesmo se alguma imagem demorar ou falhar.
+   ========================================================================== */
+
+let cortinaEscondida = false;
+
+function esconderCortina() {
+    const cortina = el("cortinaCarregamento");
+    if (!cortina || cortinaEscondida) {
+        return;
+    }
+    cortinaEscondida = true;
+    cortina.classList.add("saindo");          // abre as duas metades
+    setTimeout(function () {
+        cortina.hidden = true;                // remove do fluxo depois da animação
+    }, 900);
+}
+
+function configurarCortina() {
+    if (document.readyState === "complete") {
+        // página já terminou de carregar antes do script rodar
+        setTimeout(esconderCortina, 350);
+    } else {
+        window.addEventListener("load", function () {
+            setTimeout(esconderCortina, 350);
+        });
+    }
+    // Segurança: nunca deixa a cortina presa na tela
+    setTimeout(esconderCortina, 5000);
+}
+
+// Ligado já na leitura do arquivo (o script fica no fim do body), para que a
+// cortina seja removida mesmo que algo dê errado dentro de iniciar().
+configurarCortina();
+
+/* --------------------------------------------------------------------------
+   ANIMAÇÃO DE ENTRADA (revelar ao rolar)
+   --------------------------------------------------------------------------
+   Os blocos com a classe "revelar" sobem suavemente quando entram na tela.
+   ========================================================================== */
+
+function configurarRevelacoes() {
+    const elementos = document.querySelectorAll(".revelar");
+
+    if (!("IntersectionObserver" in window)) {
+        elementos.forEach(function (item) {
+            item.classList.add("visivel");
+        });
+        return;
+    }
+
+    const observador = new IntersectionObserver(
+        function (entradas) {
+            entradas.forEach(function (entrada) {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add("visivel");
+                    observador.unobserve(entrada.target);
+                }
+            });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    elementos.forEach(function (item) {
+        observador.observe(item);
+    });
+}
+
+/* --------------------------------------------------------------------------
+   CABEÇALHO AO ROLAR
+   --------------------------------------------------------------------------
+   Ganha uma sombra suave quando a página sai do topo, dando sensação de
+   profundidade sem mudar o layout.
+   ========================================================================== */
+
+function configurarRolagemHeader() {
+    const header = el("header");
+    if (!header) {
+        return;
+    }
+
+    let agendado = false;
+    const atualizar = function () {
+        header.classList.toggle("rolado", window.scrollY > 12);
+        agendado = false;
+    };
+
+    window.addEventListener(
+        "scroll",
+        function () {
+            if (!agendado) {
+                agendado = true;
+                window.requestAnimationFrame(atualizar);
+            }
+        },
+        { passive: true }
+    );
+
+    atualizar();
 }
 
 /* --------------------------------------------------------------------------
@@ -395,6 +532,11 @@ function preencherDadosDaEmpresa() {
     el("horarioTexto").textContent = CONFIG.horario;
     el("cidadeTexto").textContent = CONFIG.cidade;
     el("estadoTexto").textContent = CONFIG.estado;
+
+    // Selo acima do título do topo (segmento da empresa)
+    if (el("heroSegmento")) {
+        el("heroSegmento").textContent = CONFIG.segmento || "Catálogo online";
+    }
 
     // Seção de contato
     el("contatoWhatsText").textContent = CONFIG.whatsappFornecedor;
@@ -431,6 +573,7 @@ function preencherDadosDaEmpresa() {
 
 function renderizarCategorias() {
     const lista = el("categoriasLista");
+    const rolagemAnterior = lista.scrollLeft; // guarda a posição horizontal
     lista.innerHTML = ""; // limpa os botões antigos antes de criar novos
 
     categorias.forEach(function (categoria) {
@@ -450,6 +593,17 @@ function renderizarCategorias() {
 
         lista.appendChild(botao); // coloca o botão na tela
     });
+
+    // Faixa de filtros em rolagem horizontal (celular/tablet):
+    // mantém a posição atual e depois centraliza o filtro ativo na tela.
+    if (lista.scrollWidth > lista.clientWidth) {
+        lista.scrollLeft = rolagemAnterior;
+        const ativo = lista.querySelector(".categoria-chip.ativo");
+        if (ativo) {
+            const centro = ativo.offsetLeft - lista.clientWidth / 2 + ativo.offsetWidth / 2;
+            lista.scrollTo({ left: Math.max(0, centro), behavior: "smooth" });
+        }
+    }
 }
 
 /* ==========================================================================
@@ -478,11 +632,23 @@ function renderizarProdutos() {
 
     grid.innerHTML = ""; // limpa os cards anteriores
 
+    // Contagem de resultados (aparece entre os filtros e a grade)
+    const contagem = el("produtosContagem");
+    if (contagem) {
+        contagem.innerHTML =
+            "<strong>" + listaFiltrada.length + "</strong> " +
+            (listaFiltrada.length === 1 ? "produto" : "produtos") +
+            (filtroCategoria !== "Todos"
+                ? " em <strong>" + filtroCategoria + "</strong>"
+                : " no catálogo");
+    }
+
     // Se não veio nenhum produto, mostra um aviso
     if (listaFiltrada.length === 0) {
         grid.innerHTML =
             '<div class="produtos-sem-resultado">' +
-                "<p>😕 Nenhum produto encontrado.</p>" +
+                icone(ICONES.buscaVazia, 42) +
+                "<p>Nenhum produto encontrado.</p>" +
                 "<p>Tente outra busca ou categoria.</p>" +
             "</div>";
         return;
@@ -510,10 +676,11 @@ function renderizarProdutos() {
                     '<span class="preco">' + textoValor(produto.preco) + "</span>" +
                     '<button type="button" class="btn-adicionar" ' +
                         (produto.disponivel ? "" : "disabled") + ">" +
-                        (produto.disponivel ? "Adicionar ao pedido" : "Indisponível") +
+                        (produto.disponivel
+                            ? icone(ICONES.mais, 15) + "Adicionar ao pedido"
+                            : "Indisponível") +
                     "</button>" +
-                "</div>" +
-            "</div>";
+                "</div>";
 
         grid.appendChild(card); // coloca o card na grade
     });
@@ -597,7 +764,7 @@ function adicionarAoCarrinho(id, quantidade, observacao) {
 
     salvarCarrinho();      // grava no navegador
     atualizarCarrinho();   // redesenha o painel e o contador
-    mostrarToast("✓ Produto adicionado ao pedido"); // feedback visual
+    mostrarToast("Produto adicionado ao pedido"); // feedback visual
     animarContador();      // anima o número do carrinho no topo
 }
 
@@ -1035,7 +1202,9 @@ function obterDadosDoFormulario() {
 function mostrarErro(mensagens) {
     const erro = el("erroEtapa");
     erro.hidden = false;
-    erro.innerHTML = "⚠️ " + mensagens.join("<br>");
+    erro.innerHTML =
+        '<span class="erro-icone">' + icone(ICONES.alerta, 17) + "</span>" +
+        mensagens.join("<br>");
 }
 
 function esconderErro() {
@@ -1097,7 +1266,11 @@ function montarConfirmacao() {
 
         '<div class="confirmacao-blocos">' +
             "<h4>Forma de recebimento</h4>" +
-            "<p><strong>" + (dados.forma === "entrega" ? "🛵 Entrega" : "🏪 Retirada no local") + "</strong></p>" +
+            "<p><strong>" +
+                (dados.forma === "entrega"
+                    ? icone(ICONES.caminhao, 17) + " Entrega"
+                    : icone(ICONES.loja, 17) + " Retirada no local") +
+            "</strong></p>" +
             (dados.forma === "entrega" ? "<p>" + escapeHtml(enderecoExibicao) + "</p>" : "") +
         "</div>" +
 
@@ -1200,7 +1373,7 @@ function enviarPedidoWhatsApp() {
     // Monta a mensagem, abre o WhatsApp e fecha o painel do carrinho
     const mensagem = gerarMensagemWhatsApp();
     abrirWhatsApp(mensagem);
-    mostrarToast("📲 Abrindo o WhatsApp com seu pedido...");
+    mostrarToast("Abrindo o WhatsApp com seu pedido...");
 
     setTimeout(fecharCarrinho, 800);
 }
@@ -1216,7 +1389,7 @@ let timeoutToast = null; // guarda o "temporizador" para cancelar o anterior
 
 function mostrarToast(mensagem) {
     const toast = el("toast");
-    toast.textContent = mensagem;
+    toast.innerHTML = icone(ICONES.check, 18) + "<span>" + mensagem + "</span>";
     toast.hidden = false;
 
     // No próximo quadro da animação, aplica a classe que faz o balão aparecer
